@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="文件">
+    <CLASSES>
+      <root url="file://E:/文件" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

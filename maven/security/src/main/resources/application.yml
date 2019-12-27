@@ -1,0 +1,20 @@
+
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+  profiles:
+    include: driver,toolkit
+jwt:
+  route:
+    authentication:
+      path: /auth
+  header: Authorization
+  expiration: 604800
+  secret: almighty.hanhuide.project
+  startsWith: "Bearer "
+  token:
+    validTime:
+server:
+  port: 9000

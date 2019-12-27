@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="core" />
+        <module name="security" />
+        <module name="driver" />
+        <module name="maven" />
+        <module name="toolkit" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+      <module name="hhde" target="1.8" />
+      <module name="pm" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="core" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="driver" options="-parameters" />
+      <module name="hhde" options="-parameters" />
+      <module name="pm" options="-parameters" />
+      <module name="security" options="-parameters" />
+      <module name="toolkit" options="-parameters" />
+    </option>
+  </component>
+</project>

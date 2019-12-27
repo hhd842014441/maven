@@ -1,0 +1,8 @@
+spring:
+  profiles: toolkit
+  cache:
+    type: redis
+  redis:
+    timeout: 30000
+    host: localhost
+    port: 6379

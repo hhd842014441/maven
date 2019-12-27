@@ -1,0 +1,65 @@
+package com.hanhuide.core.service.impl;
+
+import com.baomidou.mybatisplus.toolkit.CollectionUtils;
+import com.hanhuide.core.model.CustomerUserDetails;
+import com.hanhuide.core.model.SysRole;
+import com.hanhuide.core.model.SysUser;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+/**
+ * @program: maven
+ * @description:用户认证、权限
+ * @author: 韩惠德
+ * @create: 2019-12-26 11:59
+ * @version: 1.0
+ **/
+@Service("userDetailsService")
+@Slf4j
+public class CustomUserDetailsService implements UserDetailsService {
+    @Autowired
+    private UserServiceImpl userService;
+
+    @Override
+    public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
+        //获取用户信息
+        SysUser user = new SysUser();
+        user.setPassword(new BCryptPasswordEncoder().encode("123456"));
+        user.setUsername("测试");
+        SysRole sysRole = new SysRole();
+        sysRole.setRoleName("管理员");
+        List<SysRole> list = new ArrayList<>();
+        list.add(sysRole);
+        user.setChildRole(list);
+        if (user == null) {
+            throw new UsernameNotFoundException("用户名不存在");
+        }
+        CustomerUserDetails userDetails = new CustomerUserDetails(user);
+        Collection<GrantedAuthority> authorities = new ArrayList<>();
+        //用于添加用户的权限。只要把用户权限添加到authorities 就万事大吉。
+        if (CollectionUtils.isNotEmpty(user.getChildRole())) {
+            user.getChildRole().forEach(r -> authorities.add(new SimpleGrantedAuthority(r.getRoleName())));
+        }
+        userDetails.setAuthorities(authorities);
+        log.info("authorities:{}", authorities);
+        //返回的是我们自己定义的UserDetail
+        return userDetails;//密码必须加密
+    }
+
+    public static void main(String[] args) {
+        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        String password = passwordEncoder.encode("hanhuide");
+        System.out.println(password);
+    }
+}
