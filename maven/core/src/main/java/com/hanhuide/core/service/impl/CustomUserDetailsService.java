@@ -1,6 +1,7 @@
 package com.hanhuide.core.service.impl;
 
 import com.baomidou.mybatisplus.toolkit.CollectionUtils;
+import com.hanhuide.core.mapper.UserMapper;
 import com.hanhuide.core.model.CustomerUserDetails;
 import com.hanhuide.core.model.SysRole;
 import com.hanhuide.core.model.SysUser;
@@ -33,15 +34,8 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-        //获取用户信息
-        SysUser user = new SysUser();
-        user.setPassword(new BCryptPasswordEncoder().encode("123456"));
-        user.setUsername("测试");
-        SysRole sysRole = new SysRole();
-        sysRole.setRoleName("管理员");
-        List<SysRole> list = new ArrayList<>();
-        list.add(sysRole);
-        user.setChildRole(list);
+        log.info(">>>>>>>>> username:{}", userName);
+        SysUser user = userService.findByUsername(userName);
         if (user == null) {
             throw new UsernameNotFoundException("用户名不存在");
         }
@@ -59,7 +53,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     public static void main(String[] args) {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        String password = passwordEncoder.encode("hanhuide");
+        String password = passwordEncoder.encode("123456");
         System.out.println(password);
     }
 }

@@ -2,6 +2,7 @@ package com.hanhuide.core.config;
 
 //import com.hanhuide.core.filter.JwtAuthenticationTokenFilter;
 
+import com.hanhuide.core.filter.VerifyFilter;
 import com.hanhuide.core.handler.*;
 import com.hanhuide.core.service.impl.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,10 +58,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests().antMatchers("/kaptcha/render").permitAll().anyRequest().authenticated();// 如果有允许匿名的url，填在下面
         http.httpBasic().authenticationEntryPoint(authenticationEntryPoint);
-        http.formLogin().loginPage("/login").successForwardUrl("/").successHandler(authenticationSuccessHandler).failureHandler(authenticationFailureHandler).permitAll();
+        http.formLogin().loginPage("/login").defaultSuccessUrl("/").permitAll().successHandler(authenticationSuccessHandler).failureHandler(authenticationFailureHandler).permitAll();
         http.logout().logoutSuccessHandler(logoutSuccessHandler);
         http.rememberMe().rememberMeParameter("remember-me").userDetailsService(userDetailsService).tokenValiditySeconds(10000);
         http.exceptionHandling().accessDeniedHandler(accessDeniedHandler); // 无权访问 JSON 格式的数据
+        http.addFilterBefore(new VerifyFilter(),UsernamePasswordAuthenticationFilter.class);
         //使用jwt的Authentication,来解析过来的请求是否有token
 //        http.addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
         //配置取消session管理,又Jwt来获取用户状态,否则即使token无效,也会有session信息,依旧判断用户为登录状态

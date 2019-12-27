@@ -11,7 +11,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Import({DynamicDataSourceConfig.class})
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-@MapperScan(basePackages = "com.hanhuide.*.mapper")
+@MapperScan(basePackages = "com.hanhuide.**.mapper")
 @EnableSwagger2
 @ComponentScan(basePackages = "com.hanhuide.*.*")
 public class CoreApplication {
