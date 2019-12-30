@@ -12,6 +12,7 @@
     <file url="file://$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/model/SysUserRole.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/driver" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/driver/src/main/resources/application-driver.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qingyun" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/src/main/java/com/hanhuide/security/enums" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/src/main/java/com/hanhuide/security/model" charset="UTF-8" />

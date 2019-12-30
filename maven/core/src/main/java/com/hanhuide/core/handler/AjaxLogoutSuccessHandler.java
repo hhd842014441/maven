@@ -25,7 +25,7 @@ public class AjaxLogoutSuccessHandler implements LogoutSuccessHandler {
     @Override
     public void onLogoutSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
         AjaxResponseBody responseBody = new AjaxResponseBody();
-        responseBody.setResultEnum(ResultEnum.USER_LOGOUT_SUCCESS);
-        httpServletResponse.getWriter().write(JSON.toJSONString(responseBody));
-    }
+        responseBody.setStatus(ResultEnum.USER_LOGOUT_SUCCESS.getCode());
+        responseBody.setMsg(ResultEnum.USER_LOGOUT_SUCCESS.getMessage());
+        httpServletResponse.getWriter().write(responseBody.toString());    }
 }

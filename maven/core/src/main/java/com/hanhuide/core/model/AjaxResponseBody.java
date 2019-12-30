@@ -13,5 +13,27 @@ public class AjaxResponseBody implements Serializable {
     private Object result;
     private String jwtToken;
     private Boolean bool;
-    private ResultEnum resultEnum;
+
+    public AjaxResponseBody() {
+    }
+
+    public AjaxResponseBody(Integer status, String msg, Object result, String jwtToken, Boolean bool) {
+        this.status = status;
+        this.msg = msg;
+        this.result = result;
+        this.jwtToken = jwtToken;
+        this.bool = bool;
+    }
+
+    public AjaxResponseBody(Integer status, String msg, String jwtToken, Boolean bool) {
+        this.status = status;
+        this.msg = msg;
+        this.jwtToken = jwtToken;
+        this.bool = bool;
+    }
+
+    public AjaxResponseBody(Integer status, String msg) {
+        this.status = status;
+        this.msg = msg;
+    }
 }

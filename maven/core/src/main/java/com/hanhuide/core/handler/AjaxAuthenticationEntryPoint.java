@@ -25,7 +25,8 @@ public class AjaxAuthenticationEntryPoint implements AuthenticationEntryPoint {
     @Override
     public void commence(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException e) throws IOException, ServletException {
         AjaxResponseBody responseBody = new AjaxResponseBody();
-        responseBody.setResultEnum(ResultEnum.USER_NEED_AUTHORITIES);
-        httpServletResponse.getWriter().write(JSON.toJSONString(responseBody));
+        responseBody.setStatus(ResultEnum.USER_NEED_AUTHORITIES.getCode());
+        responseBody.setMsg(ResultEnum.USER_NEED_AUTHORITIES.getMessage());
+        httpServletResponse.getWriter().write(responseBody.toString());
     }
 }

@@ -25,7 +25,8 @@ public class AjaxAccessDeniedHandler implements AccessDeniedHandler {
     @Override
     public void handle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AccessDeniedException e) throws IOException, ServletException {
         AjaxResponseBody responseBody = new AjaxResponseBody();
-        responseBody.setResultEnum(ResultEnum.USER_NO_ACCESS);
-        httpServletResponse.getWriter().write(JSON.toJSONString(responseBody));
+        responseBody.setStatus(ResultEnum.USER_NO_ACCESS.getCode());
+        responseBody.setMsg(ResultEnum.USER_NO_ACCESS.getMessage());
+        httpServletResponse.getWriter().write(responseBody.toString());
     }
 }

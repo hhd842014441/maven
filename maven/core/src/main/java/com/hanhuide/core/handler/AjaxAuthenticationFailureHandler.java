@@ -28,6 +28,7 @@ public class AjaxAuthenticationFailureHandler implements AuthenticationFailureHa
 
     @Override
     public void onAuthenticationFailure(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException exception) throws IOException, ServletException {
+        httpServletResponse.setContentType("application/json;charset=utf-8");
         AjaxResponseBody responseBody = new AjaxResponseBody();
         if (exception instanceof UsernameNotFoundException) {
             ResultEnum.USER_LOGIN_FAILED.setMessage("用户不存在!");
@@ -36,7 +37,7 @@ public class AjaxAuthenticationFailureHandler implements AuthenticationFailureHa
         } else if (exception instanceof LockedException) {
             ResultEnum.USER_LOGIN_FAILED.setMessage("用户已被锁定！");
         } else if (exception instanceof DisabledException) {
-            ResultEnum.USER_LOGIN_FAILED.setMessage("用户不可用！");
+            ResultEnum.USER_LOGIN_FAILED.setMessage("用户不可用！,验证码错误");
         } else if (exception instanceof AccountExpiredException) {
             ResultEnum.USER_LOGIN_FAILED.setMessage("账户已过期！");
         } else if (exception instanceof CredentialsExpiredException) {
@@ -46,7 +47,8 @@ public class AjaxAuthenticationFailureHandler implements AuthenticationFailureHa
         } else {
             ResultEnum.USER_LOGIN_FAILED.setMessage("认证失败，请联系网站管理员！");
         }
-        responseBody.setResultEnum(ResultEnum.USER_LOGIN_FAILED);
-        httpServletResponse.getWriter().write(JSON.toJSONString(responseBody));
+        responseBody.setStatus(ResultEnum.USER_LOGIN_FAILED.getCode());
+        responseBody.setMsg(ResultEnum.USER_LOGIN_FAILED.getMessage());
+        httpServletResponse.getWriter().write(responseBody.toString());
     }
 }
