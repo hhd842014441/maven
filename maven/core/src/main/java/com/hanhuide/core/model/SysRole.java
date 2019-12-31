@@ -52,25 +52,4 @@ public class SysRole implements Serializable {
 
 
     private List<SysMenu> childMenus;
-
-    public static final String ROLE_ID = "ROLE_ID";
-
-    public static final String ROLE_NAME = "ROLE_NAME";
-
-    public static final String REMARK = "REMARK";
-
-    public static final String CREATE_TIME = "CREATE_TIME";
-
-    public static final String MODIFY_TIME = "MODIFY_TIME";
-
-    @Override
-    public String toString() {
-        return "SysRole{" +
-                "roleId=" + roleId +
-                ", roleName=" + roleName +
-                ", remark=" + remark +
-                ", createTime=" + createTime +
-                ", modifyTime=" + modifyTime +
-                "}";
-    }
 }

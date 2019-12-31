@@ -12,7 +12,7 @@ import java.util.Map;
  * @Date:2019/1/22
  * @Description：
  */
-public interface MenuMapper extends BaseMapper{
+public interface MenuMapper extends BaseMapper<SysMenu> {
     List<SysMenu> getAllMenuTree();
 
     List<SysMenu> getParentMenu(Long parentId);

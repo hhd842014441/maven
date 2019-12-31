@@ -1,9 +1,7 @@
 package com.hanhuide.core.service.impl;
 
 import com.baomidou.mybatisplus.toolkit.CollectionUtils;
-import com.hanhuide.core.mapper.UserMapper;
-import com.hanhuide.core.model.CustomerUserDetails;
-import com.hanhuide.core.model.SysRole;
+import com.hanhuide.core.model.CustomUserDetails;
 import com.hanhuide.core.model.SysUser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +15,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 /**
  * @program: maven
@@ -39,7 +36,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         if (user == null) {
             throw new UsernameNotFoundException("用户名不存在");
         }
-        CustomerUserDetails userDetails = new CustomerUserDetails(user);
+        CustomUserDetails userDetails = new CustomUserDetails(user);
         Collection<GrantedAuthority> authorities = new ArrayList<>();
         //用于添加用户的权限。只要把用户权限添加到authorities 就万事大吉。
         if (CollectionUtils.isNotEmpty(user.getChildRole())) {

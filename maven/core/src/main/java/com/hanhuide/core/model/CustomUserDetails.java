@@ -12,11 +12,11 @@ import java.util.Collection;
  * @author zgd
  * @date 2019/7/17 15:29
  */
-public class CustomerUserDetails extends SysUser implements UserDetails {
+public class CustomUserDetails extends SysUser implements UserDetails {
 
     private Collection<? extends GrantedAuthority> authorities;
 
-    public CustomerUserDetails(SysUser user){
+    public CustomUserDetails(SysUser user){
         this.setUsername(user.getUsername());
         this.setPassword(user.getPassword());
         this.setStatus(user.getStatus());

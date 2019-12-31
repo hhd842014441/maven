@@ -1,8 +1,7 @@
 package com.hanhuide.core.handler;
 
-import com.alibaba.fastjson.JSON;
 import com.hanhuide.core.enums.ResultEnum;
-import com.hanhuide.core.model.AjaxResponseBody;
+import com.hanhuide.core.model.CustomResponseBody;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.stereotype.Component;
@@ -20,13 +19,15 @@ import java.io.IOException;
  * @version: 1.0
  **/
 @Component
-public class AjaxAccessDeniedHandler implements AccessDeniedHandler {
+public class CustomAccessDeniedHandler implements AccessDeniedHandler {
 
     @Override
-    public void handle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AccessDeniedException e) throws IOException, ServletException {
-        AjaxResponseBody responseBody = new AjaxResponseBody();
+    public void handle(HttpServletRequest httpServletRequest, HttpServletResponse response, AccessDeniedException e) throws IOException, ServletException {
+        response.setHeader("Content-type", "application/json; charset=utf-8");
+        response.setCharacterEncoding("UTF-8");
+        CustomResponseBody responseBody = new CustomResponseBody();
         responseBody.setStatus(ResultEnum.USER_NO_ACCESS.getCode());
         responseBody.setMsg(ResultEnum.USER_NO_ACCESS.getMessage());
-        httpServletResponse.getWriter().write(responseBody.toString());
+        response.getWriter().write(responseBody.toString());
     }
 }

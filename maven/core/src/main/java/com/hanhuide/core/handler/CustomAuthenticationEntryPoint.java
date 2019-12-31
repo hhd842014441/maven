@@ -1,8 +1,7 @@
 package com.hanhuide.core.handler;
 
-import com.alibaba.fastjson.JSON;
 import com.hanhuide.core.enums.ResultEnum;
-import com.hanhuide.core.model.AjaxResponseBody;
+import com.hanhuide.core.model.CustomResponseBody;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
@@ -20,13 +19,15 @@ import java.io.IOException;
  * @version: 1.0
  **/
 @Component
-public class AjaxAuthenticationEntryPoint implements AuthenticationEntryPoint {
+public class CustomAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
     @Override
-    public void commence(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException e) throws IOException, ServletException {
-        AjaxResponseBody responseBody = new AjaxResponseBody();
+    public void commence(HttpServletRequest httpServletRequest, HttpServletResponse response, AuthenticationException e) throws IOException, ServletException {
+        response.setHeader("Content-type", "application/json; charset=utf-8");
+        response.setCharacterEncoding("UTF-8");
+        CustomResponseBody responseBody = new CustomResponseBody();
         responseBody.setStatus(ResultEnum.USER_NEED_AUTHORITIES.getCode());
         responseBody.setMsg(ResultEnum.USER_NEED_AUTHORITIES.getMessage());
-        httpServletResponse.getWriter().write(responseBody.toString());
+        response.getWriter().write(responseBody.toString());
     }
 }

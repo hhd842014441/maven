@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC " -//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.core.mapper.RoleMapper">
-
-    <select id="getRoleListByCond" resultType="com.hanhuide.core.model.SysRole">
-        select * from sys_role order by ROLE_ID desc
-    </select>
-
     <resultMap id="PerResultMap" type="com.hanhuide.core.model.SysRole">
         <id column="ROLE_ID" jdbcType="DECIMAL" property="roleId"/>
         <result column="ROLE_NAME" jdbcType="VARCHAR" property="roleName"/>
         <result column="REMARK" jdbcType="VARCHAR" property="remark"/>
         <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime"/>
         <result column="MODIFY_TIME" jdbcType="TIMESTAMP" property="modifyTime"/>
-        <collection property="permissions" ofType="com.hanhuide.core.model.SysMenu">
+        <collection property="childMenus" ofType="com.hanhuide.core.model.SysMenu">
             <id column="MENU_ID" jdbcType="DECIMAL" property="menuId"/>
             <result column="PARENT_ID" jdbcType="DECIMAL" property="parentId"/>
             <result column="MENU_NAME" jdbcType="VARCHAR" property="menuName"/>
@@ -26,24 +21,38 @@
             <result column="MODIFY_TIME" jdbcType="TIMESTAMP" property="modifyTime"/>
         </collection>
     </resultMap>
+    <select id="getRoleListByCond" resultType="com.hanhuide.core.model.SysRole">
+        select * from sys_role order by ROLE_ID desc
+    </select>
 
-    <select id="selectByUserName" parameterType="String" resultMap="PerResultMap">
-        select *
-        from sys_user su
-        LEFT JOIN sys_user_role sur on sur.USER_ID  = `su`.USER_ID
-        LEFT JOIN sys_role sr on sr.ROLE_ID = sur.ROLE_ID
+    <!--    <select id="selectByUserName" parameterType="String" resultMap="PerResultMap">-->
+    <!--        select *-->
+    <!--        from sys_user su-->
+    <!--        LEFT JOIN sys_user_role sur on sur.USER_ID  = `su`.USER_ID-->
+    <!--        LEFT JOIN sys_role sr on sr.ROLE_ID = sur.ROLE_ID-->
+    <!--        LEFT JOIN sys_role_menu srm on srm.ROLE_ID = sr.ROLE_ID-->
+    <!--        LEFT JOIN sys_menu sm on sm.MENU_ID = srm.MENU_ID-->
+    <!--        where `su`.username = #{username} order by sm.ORDER_NUM asc-->
+    <!--    </select>-->
+
+    <select id="selectByRoleName" parameterType="String" resultMap="PerResultMap">
+        select sr.ROLE_ID,sr.ROLE_NAME,sm.PATH,sm.MENU_NAME
+        from  sys_role sr
         LEFT JOIN sys_role_menu srm on srm.ROLE_ID = sr.ROLE_ID
         LEFT JOIN sys_menu sm on sm.MENU_ID = srm.MENU_ID
-        where `su`.username = #{username} order by sm.ORDER_NUM asc
+        where `sr`.ROLE_NAME = #{roleName} order by sm.ORDER_NUM asc
     </select>
 
     <select id="getMenuTree" parameterType="map" resultType="com.hanhuide.core.model.SysMenu">
         select * from sys_menu order by sys_menu.ORDER_NUM asc
     </select>
 
-    <select id="getAllRoleList" resultType="com.hanhuide.core.model.SysRole">
-        select * from sys_role
-    </select>
+<!--    <select id="getAllRoleList" resultMap="PerResultMap">-->
+<!--            select sr.ROLE_NAME,sm.PATH,sm.MENU_NAME-->
+<!--            from  sys_role sr-->
+<!--            LEFT JOIN sys_role_menu srm on srm.ROLE_ID = sr.ROLE_ID-->
+<!--            LEFT JOIN sys_menu sm on sm.MENU_ID = srm.MENU_ID-->
+<!--        </select>-->
 
     <select id="getRoleListByPerId" resultType="com.hanhuide.core.model.SysRole">
         select * from Role

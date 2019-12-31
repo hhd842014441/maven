@@ -1,10 +1,14 @@
 package com.hanhuide.core.service.impl;
 
-import com.hanhuide.core.model.AjaxResponseBody;
+import com.hanhuide.core.mapper.MenuMapper;
+import com.hanhuide.core.model.CustomResponseBody;
+import com.hanhuide.core.model.SysMenu;
 import com.hanhuide.core.service.MenuService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -17,13 +21,15 @@ import java.util.Map;
 @Service
 @Slf4j
 public class MenuServiceImpl implements MenuService {
+    @Autowired
+    private MenuMapper menuMapper;
     /**
      * 更新菜单
      * @param map
      * @return
      */
     @Override
-    public AjaxResponseBody update(Map<String, Object> map) {
+    public CustomResponseBody update(Map<String, Object> map) {
         return null;
     }
     /**
@@ -32,7 +38,7 @@ public class MenuServiceImpl implements MenuService {
      * @return
      */
     @Override
-    public AjaxResponseBody add(Map<String, Object> map) {
+    public CustomResponseBody add(Map<String, Object> map) {
         return null;
     }
     /**
@@ -41,7 +47,7 @@ public class MenuServiceImpl implements MenuService {
      * @return
      */
     @Override
-    public AjaxResponseBody queryAllMenusTree(Map<String, Object> map) {
+    public CustomResponseBody queryAllMenusTree(Map<String, Object> map) {
         return null;
     }
 
@@ -51,7 +57,7 @@ public class MenuServiceImpl implements MenuService {
      * @return
      */
     @Override
-    public AjaxResponseBody getPerIdList(Map<String, Object> map) {
+    public CustomResponseBody getPerIdList(Map<String, Object> map) {
         return null;
     }
 
@@ -61,7 +67,7 @@ public class MenuServiceImpl implements MenuService {
      * @return
      */
     @Override
-    public AjaxResponseBody addRP(Map<String, Object> map) {
+    public CustomResponseBody addRP(Map<String, Object> map) {
         return null;
     }
 
@@ -71,7 +77,12 @@ public class MenuServiceImpl implements MenuService {
      * @return
      */
     @Override
-    public AjaxResponseBody del(Map<String, Object> map) {
+    public CustomResponseBody del(Map<String, Object> map) {
         return null;
+    }
+
+    @Override
+    public List<SysMenu> allMenu() {
+        return menuMapper.getAllMenuTree();
     }
 }

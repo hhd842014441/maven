@@ -1,8 +1,7 @@
 package com.hanhuide.core.handler;
 
-import com.alibaba.fastjson.JSON;
 import com.hanhuide.core.enums.ResultEnum;
-import com.hanhuide.core.model.AjaxResponseBody;
+import com.hanhuide.core.model.CustomResponseBody;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 import org.springframework.stereotype.Component;
@@ -20,12 +19,15 @@ import java.io.IOException;
  * @version: 1.0
  **/
 @Component
-public class AjaxLogoutSuccessHandler implements LogoutSuccessHandler {
+public class CustomLogoutSuccessHandler implements LogoutSuccessHandler {
 
     @Override
-    public void onLogoutSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
-        AjaxResponseBody responseBody = new AjaxResponseBody();
+    public void onLogoutSuccess(HttpServletRequest httpServletRequest, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+        response.setHeader("Content-type", "application/json; charset=utf-8");
+        response.setCharacterEncoding("UTF-8");
+        CustomResponseBody responseBody = new CustomResponseBody();
         responseBody.setStatus(ResultEnum.USER_LOGOUT_SUCCESS.getCode());
         responseBody.setMsg(ResultEnum.USER_LOGOUT_SUCCESS.getMessage());
-        httpServletResponse.getWriter().write(responseBody.toString());    }
+        response.getWriter().write(responseBody.toString());
+    }
 }

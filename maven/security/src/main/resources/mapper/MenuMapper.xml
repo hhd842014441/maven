@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC " -//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.core.mapper.sys_menuMapper">
+<mapper namespace="com.example.security.mapper.sys_menuMapper">
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.hanhuide.core.model.SysMenu">
+    <resultMap id="BaseResultMap" type="com.hanhuide.security.model.SysMenu">
         <id column="MENU_ID" jdbcType="DECIMAL" property="menuId"/>
         <result column="PARENT_ID" jdbcType="DECIMAL" property="parentId"/>
         <result column="MENU_NAME" jdbcType="VARCHAR" property="menuName"/>
@@ -50,7 +50,7 @@
         select count(*) from sys_role_menu where ROLE_ID = #{roleId}
     </select>
 
-    <select id="getAllMenuTree" resultType="com.hanhuide.core.model.SysMenu">
+    <select id="getAllMenuTree" resultType="com.hanhuide.security.model.SysMenu">
         select * from sys_menu order by ORDER_NUM asc
     </select>
 
@@ -59,7 +59,7 @@
     </insert>
 
 
-    <select id="getParentMenu" resultType="com.hanhuide.core.model.SysMenu">
+    <select id="getParentMenu" resultType="com.hanhuide.security.model.SysMenu">
         select * from sys_menu where parent_id = #{parentId} order by ORDER_NUM asc
     </select>
 

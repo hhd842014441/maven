@@ -3,7 +3,7 @@ package com.hanhuide.core.service.impl;
 import com.hanhuide.core.mapper.MenuMapper;
 import com.hanhuide.core.mapper.RoleMapper;
 import com.hanhuide.core.mapper.UserMapper;
-import com.hanhuide.core.model.AjaxResponseBody;
+import com.hanhuide.core.model.CustomResponseBody;
 import com.hanhuide.core.model.SysMenu;
 import com.hanhuide.core.model.SysUser;
 import com.hanhuide.core.service.UserService;
@@ -63,7 +63,7 @@ public class UserServiceImpl implements UserService {
      * @throws AuthenticationException
      */
     @Override
-    public AjaxResponseBody login(String username, String password) {
+    public CustomResponseBody login(String username, String password) {
         return null;
     }
 
@@ -74,7 +74,7 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     @Override
-    public AjaxResponseBody getUserInfo(String username) {
+    public CustomResponseBody getUserInfo(String username) {
         return null;
     }
 
@@ -85,7 +85,7 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     @Override
-    public AjaxResponseBody getMenuTree(String username) {
+    public CustomResponseBody getMenuTree(String username) {
         return null;
     }
 

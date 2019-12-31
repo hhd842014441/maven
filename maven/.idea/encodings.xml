@@ -4,7 +4,7 @@
     <file url="file://$PROJECT_DIR$/core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/config/WebSecurityConfig.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/enums/ResultEnum.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/model/AjaxResponseBody.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/model/CustomResponseBody.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/model/SysMenu.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/model/SysRole.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/model/SysRoleMenu.java" charset="UTF-8" />

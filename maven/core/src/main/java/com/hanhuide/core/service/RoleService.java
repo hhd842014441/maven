@@ -1,8 +1,11 @@
 package com.hanhuide.core.service;
 
 
-import com.hanhuide.core.model.AjaxResponseBody;
+import com.hanhuide.core.model.CustomResponseBody;
+import com.hanhuide.core.model.SysRole;
+import org.apache.ibatis.annotations.Select;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -12,17 +15,22 @@ import java.util.Map;
  */
 public interface RoleService {
 
-    AjaxResponseBody getRoleListByCond(Map<String, Object> map);
+    CustomResponseBody getRoleListByCond(Map<String, Object> map);
 
-    AjaxResponseBody getAllRoleList(Map<String, Object> map);
+    CustomResponseBody getAllRoleList(Map<String, Object> map);
 
-    AjaxResponseBody getRoleListByPerId(Map<String, Object> map);
+    CustomResponseBody getRoleListByPerId(Map<String, Object> map);
 
-    AjaxResponseBody selectByUserName(Map<String, Object> map);
+    CustomResponseBody selectByUserName(Map<String, Object> map);
 
-    AjaxResponseBody addRoleById(Map<String, Object> map);
+    SysRole selectByRoleName(String roleName);
 
-    AjaxResponseBody delRoleById(Map<String, Object> map);
 
-    AjaxResponseBody updateById(Map<String, Object> map);
+    List<SysRole> selectBysRole();
+
+    CustomResponseBody addRoleById(Map<String, Object> map);
+
+    CustomResponseBody delRoleById(Map<String, Object> map);
+
+    CustomResponseBody updateById(Map<String, Object> map);
 }

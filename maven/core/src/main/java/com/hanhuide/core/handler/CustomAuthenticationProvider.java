@@ -1,6 +1,6 @@
 package com.hanhuide.core.handler;
 
-import com.hanhuide.core.model.CustomerWebAuthenticationDetails;
+import com.hanhuide.core.model.CustomAuthDetails;
 import com.hanhuide.core.service.impl.CustomUserDetailsService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +12,10 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
+import org.thymeleaf.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -34,39 +34,43 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-        // 获取用户输入的用户名和密码
-        String inputName = authentication.getName();
-        String inputPassword = authentication.getCredentials().toString();
-        CustomerWebAuthenticationDetails details = (CustomerWebAuthenticationDetails) authentication.getDetails();
-
-        String verifyCode = details.getVerifyCode();
-        if (!validateVerify(verifyCode)) {
+        CustomAuthDetails details = (CustomAuthDetails) authentication.getDetails();
+        String validateCodeText = details.getVerifyCode();
+        if (StringUtils.isEmptyOrWhitespace(validateCodeText)) {
+            throw new DisabledException("请输入验证码");
+        }
+        if (!kaptchaVerify(validateCodeText)) {
             throw new DisabledException("验证码输入错误");
         }
-
         // userDetails为数据库中查询到的用户信息
-        UserDetails userDetails = customUserDetailsService.loadUserByUsername(inputName);
+        UserDetails userDetails = customUserDetailsService.loadUserByUsername(details.getUsername());
         // 如果是自定义AuthenticationProvider，需要手动密码校验
         log.info("userDetails{}", userDetails);
-        log.info(inputPassword);
-        log.info(new BCryptPasswordEncoder().encode(inputPassword));
+        log.info(details.getPassword());
+        log.info(new BCryptPasswordEncoder().encode(details.getPassword()));
 
-        if (!new BCryptPasswordEncoder().matches(inputPassword, userDetails.getPassword())) {
+        if (!new BCryptPasswordEncoder().matches(details.getPassword(), userDetails.getPassword())) {
             throw new BadCredentialsException("密码错误");
         }
 
-        return new UsernamePasswordAuthenticationToken(inputName, new BCryptPasswordEncoder().encode(inputPassword), userDetails.getAuthorities());
+        return new UsernamePasswordAuthenticationToken(details.getUsername(), new BCryptPasswordEncoder().encode(details.getPassword()), userDetails.getAuthorities());
     }
 
-    private boolean validateVerify(String inputVerify) {
+    private boolean kaptchaVerify(String validateCodeText) {
         //获取当前线程绑定的request对象
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-        // 不分区大小写
         // 这个validateCode是在servlet中存入session的名字
-        String validateCode = ((String) request.getSession().getAttribute("code")).toLowerCase();
-        inputVerify = inputVerify.toLowerCase();
-        System.out.println("验证码：" + validateCode + "用户输入：" + inputVerify);
-        return validateCode.equals(inputVerify);
+        String validateCode = null;
+        try {
+            //第一次登录 会先去获取session但是，如有设置了自动登录会有，否则出现异常
+            validateCode = ((String) request.getSession().getAttribute("code")).toLowerCase();
+            validateCodeText = validateCodeText.toLowerCase();
+            log.info("验证码：" + validateCode + "用户输入：" + validateCodeText);
+            return validateCode.equals(validateCodeText);
+        } catch (Exception e) {
+            log.error("当前数据没有保存session");
+        }
+        return false;
     }
 
     @Override

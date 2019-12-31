@@ -1,9 +1,8 @@
 package com.hanhuide.core.handler;
 
-import com.alibaba.fastjson.JSON;
 import com.hanhuide.core.enums.ResultEnum;
-import com.hanhuide.core.model.AjaxResponseBody;
-import com.hanhuide.core.model.CustomerUserDetails;
+import com.hanhuide.core.model.CustomResponseBody;
+import com.hanhuide.core.model.CustomAuthDetails;
 import com.hanhuide.core.utils.JwtTokenUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,21 +26,23 @@ import java.util.Map;
  **/
 @Component
 @Slf4j
-public class AjaxAuthenticationSuccessHandler implements AuthenticationSuccessHandler {
+public class CustomAuthenticationSuccessHandler implements AuthenticationSuccessHandler {
     @Autowired
     private JwtTokenUtil jwtTokenUtil;
 
     @Override
-    public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
-        AjaxResponseBody responseBody = new AjaxResponseBody();
-        CustomerUserDetails userDetails = (CustomerUserDetails) authentication.getPrincipal();
+    public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+        response.setHeader("Content-type", "application/json; charset=utf-8");
+        response.setCharacterEncoding("UTF-8");
+        CustomResponseBody responseBody = new CustomResponseBody();
+        CustomAuthDetails userDetails = (CustomAuthDetails) authentication.getDetails();
         log.info("用户登录信息{}", userDetails);
         Map<String, Object> map = new HashMap<>();
         String jwtToken = jwtTokenUtil.doGenerateToken(map, userDetails.getUsername());
         responseBody.setJwtToken(jwtToken);
         responseBody.setStatus(ResultEnum.USER_LOGIN_SUCCESS.getCode());
         responseBody.setMsg(ResultEnum.USER_LOGIN_SUCCESS.getMessage());
-        httpServletResponse.getWriter().write(responseBody.toString());
+        response.getWriter().write(responseBody.toString());
     }
 }
 

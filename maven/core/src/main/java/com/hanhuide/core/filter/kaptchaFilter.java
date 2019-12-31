@@ -23,15 +23,15 @@ import java.io.IOException;
  * @version: 1.0
  **/
 @Slf4j
-public class VerifyFilter extends OncePerRequestFilter {
+public class kaptchaFilter extends OncePerRequestFilter {
     private static final PathMatcher pathMatcher = new AntPathMatcher();
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         if (isProtectedUrl(request)) {
-            String verifyCode = request.getParameter("validateCodeText");
-            logger.info(verifyCode);
-            if (!validateVerify(verifyCode)) {
+            String validateCodeText = request.getParameter("validateCodeText");
+            logger.info(validateCodeText);
+            if (!kaptchaVerify(validateCodeText)) {
                 //手动设置异常
                 request.getSession().setAttribute("SPRING_SECURITY_LAST_EXCEPTION", new DisabledException("验证码输入错误"));
                 // 转发到错误Url
@@ -45,18 +45,21 @@ public class VerifyFilter extends OncePerRequestFilter {
 
     }
 
-    private boolean validateVerify(String inputVerify) {
+    private boolean kaptchaVerify(String validateCodeText) {
         //获取当前线程绑定的request对象
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-        // 不分区大小写
-        // 这个validateCode是在servlet中存入session的名字
+        // 这个validateCode是在servlet中存入session的名字code  在获取验证码的时候添加到session中
         String validateCode = ((String) request.getSession().getAttribute("code")).toLowerCase();
-        inputVerify = inputVerify.toLowerCase();
-        System.out.println("验证码：" + validateCode + "用户输入：" + inputVerify);
-        return validateCode.equals(inputVerify);
+        validateCodeText = validateCodeText.toLowerCase();
+        log.info("验证码：" + validateCode + "用户输入：" + validateCodeText);
+        return validateCode.equals(validateCodeText);
     }
 
-    // 拦截 /login的POST请求
+    /**
+     * 拦截请求登录页面 为post的请求
+     * @param request
+     * @return
+     */
     private boolean isProtectedUrl(HttpServletRequest request) {
         return "POST".equals(request.getMethod()) && pathMatcher.match("/login", request.getServletPath());
     }

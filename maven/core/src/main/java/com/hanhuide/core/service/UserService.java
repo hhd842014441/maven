@@ -1,6 +1,6 @@
 package com.hanhuide.core.service;
 
-import com.hanhuide.core.model.AjaxResponseBody;
+import com.hanhuide.core.model.CustomResponseBody;
 import com.hanhuide.core.model.SysMenu;
 import com.hanhuide.core.model.SysUser;
 
@@ -19,9 +19,9 @@ public interface UserService {
     SysUser findByUsername(String username);
 
 
-    AjaxResponseBody login(String username, String password);
+    CustomResponseBody login(String username, String password);
 
-    AjaxResponseBody getUserInfo(String username);
+    CustomResponseBody getUserInfo(String username);
 
     /**
      * 获取菜单树
@@ -29,7 +29,7 @@ public interface UserService {
      * @param username
      * @return
      */
-    AjaxResponseBody getMenuTree(String username);
+    CustomResponseBody getMenuTree(String username);
 
     Object getAllMenuTree(List<SysMenu> sysMenus);
 

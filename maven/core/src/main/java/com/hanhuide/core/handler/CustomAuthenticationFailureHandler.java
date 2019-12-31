@@ -1,9 +1,7 @@
 package com.hanhuide.core.handler;
 
-import com.alibaba.druid.support.json.JSONUtils;
-import com.alibaba.fastjson.JSON;
 import com.hanhuide.core.enums.ResultEnum;
-import com.hanhuide.core.model.AjaxResponseBody;
+import com.hanhuide.core.model.CustomResponseBody;
 import org.springframework.security.authentication.*;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -23,13 +21,14 @@ import java.io.IOException;
  * @version: 1.0
  **/
 @Component
-public class AjaxAuthenticationFailureHandler implements AuthenticationFailureHandler {
+public class CustomAuthenticationFailureHandler implements AuthenticationFailureHandler {
 
 
     @Override
-    public void onAuthenticationFailure(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException exception) throws IOException, ServletException {
-        httpServletResponse.setContentType("application/json;charset=utf-8");
-        AjaxResponseBody responseBody = new AjaxResponseBody();
+    public void onAuthenticationFailure(HttpServletRequest httpServletRequest, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
+        response.setHeader("Content-type", "application/json; charset=utf-8");
+        response.setCharacterEncoding("UTF-8");
+        CustomResponseBody responseBody = new CustomResponseBody();
         if (exception instanceof UsernameNotFoundException) {
             ResultEnum.USER_LOGIN_FAILED.setMessage("用户不存在!");
         } else if (exception instanceof BadCredentialsException) {
@@ -49,6 +48,6 @@ public class AjaxAuthenticationFailureHandler implements AuthenticationFailureHa
         }
         responseBody.setStatus(ResultEnum.USER_LOGIN_FAILED.getCode());
         responseBody.setMsg(ResultEnum.USER_LOGIN_FAILED.getMessage());
-        httpServletResponse.getWriter().write(responseBody.toString());
+        response.getWriter().write(responseBody.toString());
     }
 }
