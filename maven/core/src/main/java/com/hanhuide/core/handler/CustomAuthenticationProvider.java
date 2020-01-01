@@ -2,6 +2,8 @@ package com.hanhuide.core.handler;
 
 import com.hanhuide.core.model.CustomAuthDetails;
 import com.hanhuide.core.service.impl.CustomUserDetailsService;
+import com.hanhuide.core.utils.CookieUtils;
+import com.hanhuide.toolkit.utils.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
@@ -31,6 +33,8 @@ import javax.servlet.http.HttpServletRequest;
 public class CustomAuthenticationProvider implements AuthenticationProvider {
     @Autowired
     private CustomUserDetailsService customUserDetailsService;
+    @Autowired
+    private RedisUtil redisUtil;
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
@@ -55,6 +59,31 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
         return new UsernamePasswordAuthenticationToken(details.getUsername(), new BCryptPasswordEncoder().encode(details.getPassword()), userDetails.getAuthorities());
     }
+//
+//    @Override
+//    public Authentication authenticate(Authentication authentication) throws AuthenticationException {
+//        CustomAuthDetails details = (CustomAuthDetails) authentication.getDetails();
+//        String validateCodeText = details.getVerifyCode();
+//        if (StringUtils.isEmptyOrWhitespace(validateCodeText)) {
+//            throw new DisabledException("请输入验证码");
+//        }
+//        if (!kaptchaVerify(validateCodeText)) {
+//            throw new DisabledException("验证码输入错误");
+//        }
+//        // userDetails为数据库中查询到的用户信息
+//        UserDetails userDetails = customUserDetailsService.loadUserByUsername(details.getUsername());
+//        // 如果是自定义AuthenticationProvider，需要手动密码校验
+//        log.info("userDetails{}", userDetails);
+//        log.info(details.getPassword());
+//        log.info(new BCryptPasswordEncoder().encode(details.getPassword()));
+//
+//        if (!new BCryptPasswordEncoder().matches(details.getPassword(), userDetails.getPassword())) {
+//            throw new BadCredentialsException("密码错误");
+//        }
+//
+//        return new UsernamePasswordAuthenticationToken(details.getUsername(), new BCryptPasswordEncoder().encode(details.getPassword()), userDetails.getAuthorities());
+//    }
+
 
     private boolean kaptchaVerify(String validateCodeText) {
         //获取当前线程绑定的request对象
@@ -63,12 +92,14 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         String validateCode = null;
         try {
             //第一次登录 会先去获取session但是，如有设置了自动登录会有，否则出现异常
-            validateCode = ((String) request.getSession().getAttribute("code")).toLowerCase();
+            log.info(request.getRequestURI());
+            String captcha = CookieUtils.getCookieValue(request, "captcha").toLowerCase();
+            validateCode = (String) redisUtil.get(captcha);
             validateCodeText = validateCodeText.toLowerCase();
             log.info("验证码：" + validateCode + "用户输入：" + validateCodeText);
             return validateCode.equals(validateCodeText);
         } catch (Exception e) {
-            log.error("当前数据没有保存session");
+            log.error("当前数据没有保存session:{}");
         }
         return false;
     }

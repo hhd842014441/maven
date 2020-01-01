@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.cluster",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.hanhuide.driver.config.DynamicDataSourceConfig",
+      "sourceMethod": "twoDataSource()"
+    },
+    {
+      "name": "spring.datasource.master",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.hanhuide.driver.config.DynamicDataSourceConfig",
+      "sourceMethod": "oneDataSource()"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

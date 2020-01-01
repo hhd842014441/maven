@@ -1,0 +1,55 @@
+spring:
+  profiles: driver
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.p6spy.engine.spy.P6SpyDriver
+    druid:
+      initial-size: 10
+      max-active: 100
+      min-idle: 10
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        login-username: admin
+        login-password: admin
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 1000
+        merge-sql: true
+        wall:
+          config:
+            multi-statement-allow: true
+    master:  #数据源1
+      url: jdbc:p6spy:mysql://localhost:3306/springcloud?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=true
+      username: root
+      password: root
+    cluster: #数据源2
+      url: jdbc:p6spy:mysql://localhost:3306/occs?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=true
+      username: root
+      password: root
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.hanhuide.*.mapper
+  configuration:
+    map-underscore-to-camel-case: true
+swagger:
+  enabled: true  # 是否启用swagger，默认：true
+  title: "Spring Boot 测试使用 Swagger2 构建RESTful API" # 标题
+  version: "1.0" # 版本
+  description: "API 描述" # 描述
+  base-package: "com.hanhuide.*.controller" # swagger扫描的基础包，默认：全扫描
+  base-path: /** # 需要处理的基础URL规则，默认：/**
+  #  exclude-path: "" # 需要排除的URL规则，默认：空
+  license: "Apache License, Version 2.0"
+  license-url: "https://www.apache.org/licenses/LICENSE-2.0.html"
+

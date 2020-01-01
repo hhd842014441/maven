@@ -1,7 +1,9 @@
 package com.hanhuide.core.model;
 
 import com.google.code.kaptcha.Constants;
+import com.hanhuide.core.utils.CookieUtils;
 import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,14 +18,12 @@ import javax.servlet.http.HttpServletRequest;
 @Data
 public class CustomAuthDetails extends WebAuthenticationDetails {
     private final String verifyCode;
-    private final String captchSession;
     private final String username;
     private final String password;
 
     public CustomAuthDetails(HttpServletRequest request) {
         super(request);
         this.verifyCode = request.getParameter("validateCodeText");
-        this.captchSession = (String) request.getSession().getAttribute(Constants.KAPTCHA_SESSION_KEY);
         this.username = request.getParameter("username");
         this.password = request.getParameter("password");
     }
@@ -32,7 +32,6 @@ public class CustomAuthDetails extends WebAuthenticationDetails {
     public String toString() {
         return "CustomerAuthDetails{" +
                 "verifyCode='" + verifyCode + '\'' +
-                ", captchSession='" + captchSession + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';

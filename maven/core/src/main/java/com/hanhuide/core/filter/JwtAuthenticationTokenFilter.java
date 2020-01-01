@@ -11,8 +11,6 @@
 //import org.springframework.security.core.userdetails.UserDetails;
 //import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 //import org.springframework.stereotype.Component;
-//import org.springframework.web.context.request.RequestContextHolder;
-//import org.springframework.web.context.request.ServletRequestAttributes;
 //import org.springframework.web.filter.OncePerRequestFilter;
 //
 //import javax.servlet.FilterChain;
@@ -53,21 +51,5 @@
 //            }
 //        }
 //        chain.doFilter(request, response);
-//    }
-//    private boolean validateVerify(String inputVerify) {
-//        //获取当前线程绑定的request对象
-//        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-//        // 不分区大小写
-//        // 这个validateCode是在servlet中存入session的名字
-//        String validateCode = ((String) request.getSession().getAttribute("validateCode")).toLowerCase();
-//        inputVerify = inputVerify.toLowerCase();
-//
-//        System.out.println("验证码：" + validateCode + "用户输入：" + inputVerify);
-//        return validateCode.equals(inputVerify);
-//    }
-//
-//    // 拦截 /login的POST请求
-//    private boolean isProtectedUrl(HttpServletRequest request) {
-//        return "POST".equals(request.getMethod()) && pathMatcher.match("/login", request.getServletPath());
 //    }
 //}

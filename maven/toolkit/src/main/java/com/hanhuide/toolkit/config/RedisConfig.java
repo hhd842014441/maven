@@ -11,6 +11,7 @@ import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.*;
 import org.springframework.data.redis.serializer.*;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
 import java.time.Duration;
 
@@ -23,6 +24,7 @@ import java.time.Duration;
  **/
 @EnableCaching
 @Configuration
+@EnableRedisHttpSession
 public class RedisConfig extends CachingConfigurerSupport {
 
     /**

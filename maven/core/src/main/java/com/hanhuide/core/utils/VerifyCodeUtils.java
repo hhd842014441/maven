@@ -1,5 +1,7 @@
 package com.hanhuide.core.utils;
 
+import org.springframework.stereotype.Component;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
@@ -18,6 +20,7 @@ import java.util.Random;
  * @create: 2019-12-04 14:13
  * @version: 1.0
  **/
+@Component
 public class VerifyCodeUtils {
     //使用到Algerian字体，系统里没有的话需要安装字体，字体只显示大写，去掉了1,0,i,o几个容易混淆的字符
     public static final String VERIFY_CODES = "23456789ABCDEFGHJKLMNPQRSTUVWXYZ";

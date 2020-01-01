@@ -26,20 +26,18 @@ public class CustomAccessDecisionManager implements AccessDecisionManager {
     @Override
     public void decide(Authentication authentication, Object o, Collection<ConfigAttribute> collection) throws AccessDeniedException, InsufficientAuthenticationException {
         log.info("principal:{} collection:{}", authentication.getPrincipal().toString(), collection);
+        if (collection == null) {
+            return;
+        }
         for (ConfigAttribute configAttribute : collection) {
-            // 当前请求需要的权限
             String needRole = configAttribute.getAttribute();
-            // 当前用户所具有的权限
-            Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
-            log.info("authorities: {}", authorities);
-            for (GrantedAuthority grantedAuthority : authorities) {
-                // 包含其中一个角色即可访问
-                if (grantedAuthority.getAuthority().equals(needRole)) {
+            for (GrantedAuthority ga : authentication.getAuthorities()) {
+                if (needRole.trim().equals(ga.getAuthority().trim()) || needRole.trim().equals("ROLE_ANONYMOUS")) {
                     return;
                 }
             }
         }
-        throw new AccessDeniedException("SimpleGrantedAuthority!!");
+        throw new AccessDeniedException("无权限！");
     }
 
     @Override

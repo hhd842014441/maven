@@ -1,6 +1,7 @@
 package com.hanhuide.core.utils;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +18,7 @@ import java.net.URLEncoder;
  * @version: 1.0
  **/
 @Slf4j
+@Component
 public class CookieUtils {
     /**
      * 得到Cookie的值, 不编码

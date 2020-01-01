@@ -25,11 +25,7 @@ public interface RoleMapper extends BaseMapper<SysRole> {
     Integer update(SysRole sysRole);
 
     Set<Object> selectByUserName(String username);
-//@Select("select sr.ROLE_ID,sr.ROLE_NAME,sm.PATH,sm.MENU_NAME\n" +
-//        "        from  sys_role sr\n" +
-//        "        LEFT JOIN sys_role_menu srm on srm.ROLE_ID = sr.ROLE_ID\n" +
-//        "        LEFT JOIN sys_menu sm on sm.MENU_ID = srm.MENU_ID\n" +
-//        "        where `sr`.ROLE_NAME = #{roleName} order by sm.ORDER_NUM asc")
+
     SysRole selectByRoleName(@Param("roleName") String roleName);
 
     ArrayList<SysRole> getRoleListByCond(Map<String, Object> map);

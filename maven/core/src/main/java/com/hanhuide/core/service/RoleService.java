@@ -3,7 +3,6 @@ package com.hanhuide.core.service;
 
 import com.hanhuide.core.model.CustomResponseBody;
 import com.hanhuide.core.model.SysRole;
-import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 import java.util.Map;
