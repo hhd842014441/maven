@@ -2,7 +2,6 @@ package com.hanhuide.core.handler;
 
 import com.hanhuide.core.model.CustomAuthDetails;
 import org.springframework.security.authentication.AuthenticationDetailsSource;
-import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,9 +14,9 @@ import javax.servlet.http.HttpServletRequest;
  * @version: 1.0
  **/
 @Component("authenticationDetailsSource")
-public class CustomAuthenticationDetailsSource implements AuthenticationDetailsSource<HttpServletRequest, WebAuthenticationDetails> {
+public class CustomAuthenticationDetailsSource implements AuthenticationDetailsSource<HttpServletRequest, CustomAuthDetails> {
     @Override
-    public WebAuthenticationDetails buildDetails(HttpServletRequest request) {
+    public CustomAuthDetails buildDetails(HttpServletRequest request) {
         return new CustomAuthDetails(request);
     }
 }

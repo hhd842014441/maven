@@ -28,8 +28,8 @@ jwt:
     authentication:
       path: /auth
   header: Authorization
-  expiration: 604800
+  expiration: 60
   secret: almighty.hanhuide.project
   startsWith: "Bearer "
   token:
-    validTime:
+    validTime: 7

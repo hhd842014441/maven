@@ -1,5 +1,6 @@
 package com.hanhuide.core.handler;
 
+import com.alibaba.fastjson.JSON;
 import com.hanhuide.core.enums.ResultEnum;
 import com.hanhuide.core.model.CustomResponseBody;
 import org.springframework.security.authentication.*;
@@ -48,6 +49,6 @@ public class CustomAuthenticationFailureHandler implements AuthenticationFailure
         }
         responseBody.setStatus(ResultEnum.USER_LOGIN_FAILED.getCode());
         responseBody.setMsg(ResultEnum.USER_LOGIN_FAILED.getMessage());
-        response.getWriter().write(responseBody.toString());
+        response.getWriter().write(JSON.toJSONString(responseBody));
     }
 }

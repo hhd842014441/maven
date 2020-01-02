@@ -2,11 +2,11 @@ package com.hanhuide.core.config;
 
 //import com.hanhuide.core.filter.JwtAuthenticationTokenFilter;
 
+import com.hanhuide.core.filter.JwtAuthenticationTokenFilter;
 import com.hanhuide.core.handler.CustomFilterInvocationSecurityMetadataSource;
 import com.hanhuide.core.handler.*;
 import com.hanhuide.core.service.impl.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.ObjectPostProcessor;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -50,8 +50,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private CustomFilterInvocationSecurityMetadataSource securityMetadataSource;
     @Autowired
     private CustomAccessDecisionManager decisionManager;
-//    @Autowired
-//    private JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter;
+    @Autowired
+    private JwtAuthenticationTokenFilter filter;
 
     /**
      * 自定义的登录认证取代原有的security认证
@@ -81,7 +81,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.rememberMe().rememberMeParameter("remember-me").userDetailsService(userDetailsService).tokenValiditySeconds(10000);
         http.exceptionHandling().accessDeniedHandler(accessDeniedHandler); // 无权访问 JSON 格式的数据
         //使用jwt的Authentication,来解析过来的请求是否有token
-//        http.addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(filter, UsernamePasswordAuthenticationFilter.class);
         //配置取消session管理,又Jwt来获取用户状态,否则即使token无效,也会有session信息,依旧判断用户为登录状态
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 //        http.sessionManagement().invalidSessionUrl("/invalid").maximumSessions(1).maxSessionsPreventsLogin(false).expiredSessionStrategy(new CustomExpiredSessionStrategy());
@@ -94,6 +94,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) throws Exception {
         // 设置拦截忽略文件夹，可以对静态资源放行
         web.ignoring().antMatchers("/css/**", "/js/**", "/fonts/**", "/images/**", "/vendor/**")
-                .antMatchers("/kaptcha/render");
+                .antMatchers("/kaptcha/render","/favicon.ico");
     }
 }

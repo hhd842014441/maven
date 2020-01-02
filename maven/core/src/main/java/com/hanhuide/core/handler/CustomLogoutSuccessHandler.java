@@ -1,7 +1,13 @@
 package com.hanhuide.core.handler;
 
+import com.alibaba.fastjson.JSON;
 import com.hanhuide.core.enums.ResultEnum;
 import com.hanhuide.core.model.CustomResponseBody;
+import com.hanhuide.core.utils.DateUtil;
+import com.hanhuide.core.utils.TokenRedisUtil;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 import org.springframework.stereotype.Component;
@@ -19,15 +25,32 @@ import java.io.IOException;
  * @version: 1.0
  **/
 @Component
+@Slf4j
 public class CustomLogoutSuccessHandler implements LogoutSuccessHandler {
+    @Value("${jwt.startsWith}")
+    private String startsWith;
+
+    @Value("${jwt.header}")
+    private String tokenHeader;
+    @Autowired
+    private TokenRedisUtil redisUtil;
 
     @Override
     public void onLogoutSuccess(HttpServletRequest httpServletRequest, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
         response.setHeader("Content-type", "application/json; charset=utf-8");
         response.setCharacterEncoding("UTF-8");
+        String authHeader = httpServletRequest.getHeader(tokenHeader);
+        System.out.println(authHeader);
+        if (authHeader != null && authHeader.startsWith(startsWith)) {
+            final String authToken = authHeader.substring(startsWith.length());
+            System.out.println(authToken);
+            //将token放入黑名单中
+            redisUtil.hset(authToken);
+            log.info("token：{}已加入redis黑名单", authToken);
+        }
         CustomResponseBody responseBody = new CustomResponseBody();
         responseBody.setStatus(ResultEnum.USER_LOGOUT_SUCCESS.getCode());
         responseBody.setMsg(ResultEnum.USER_LOGOUT_SUCCESS.getMessage());
-        response.getWriter().write(responseBody.toString());
+        response.getWriter().write(JSON.toJSONString(responseBody));
     }
 }

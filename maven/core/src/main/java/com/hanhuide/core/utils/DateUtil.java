@@ -30,20 +30,22 @@ public class DateUtil {
 
     /**
      * 日期比较，如果s>=e 返回true 否则返回false
+     *
      * @param s
      * @param e
      * @return
      */
     public static boolean compareDate(String s, String e) {
-        if(fomatDate(s)==null||fomatDate(e)==null){
+        if (fomatDate(s) == null || fomatDate(e) == null) {
             return false;
         }
 //        return fomatDate(s).getTime() >=fomatDate(e).getTime();
-        return s.compareTo(e)>0;
+        return s.compareTo(e) > 0;
     }
 
     /**
      * 格式化日期
+     *
      * @param date
      * @return
      */
@@ -59,10 +61,11 @@ public class DateUtil {
 
     /**
      * 获取当前时间的后i天
+     *
      * @param i
      * @return
      */
-    public static String getAddDay(int i){
+    public static String getAddDay(int i) {
         String currentTime = DateUtil.getTime();
         GregorianCalendar gCal = new GregorianCalendar(
                 Integer.parseInt(currentTime.substring(0, 4)),
@@ -75,22 +78,24 @@ public class DateUtil {
     /**
      * 获取当前时间的后i天
      * 精确到秒
+     *
      * @param i
      * @return
      */
-    public static String getAddDayTime(int i){
-        Date date = new Date(System.currentTimeMillis()+i*24*60*60*1000);
+    public static String getAddDayTime(int i) {
+        Date date = new Date(System.currentTimeMillis() + i * 24 * 60 * 60 * 1000);
         return sdfTime.format(date);
     }
 
     /**
      * 获取当前时间的+多少秒
      * 精确到秒
+     *
      * @param i
      * @return
      */
-    public static String getAddDaySecond(int i){
-        Date date = new Date(System.currentTimeMillis()+i*1000);
+    public static String getAddDaySecond(int i) {
+        Date date = new Date(System.currentTimeMillis() + i * 1000);
         return sdfTime.format(date);
     }
 }

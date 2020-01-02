@@ -36,18 +36,17 @@ public class KaptchaController {
     @RequestMapping("/render")
     public void defaultKaptcha(HttpServletRequest httpServletRequest, HttpServletResponse response) throws Exception {
         /*禁止缓存*/
-//        response.setDateHeader("Expires", 0);
-//        response.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
-//        response.addHeader("Cache-Control", "post-check=0, pre-check=0");
-//        response.setHeader("Pragma", "no-cache");
-//        response.setContentType("image/jpeg");
+        response.setDateHeader("Expires", 0);
+        response.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
+        response.addHeader("Cache-Control", "post-check=0, pre-check=0");
+        response.setHeader("Pragma", "no-cache");
+        response.setContentType("image/jpeg");
         /*获取验证码*/
         String createText = defaultKaptcha.createText();
         /*验证码已key，value的形式缓存到redis 存放时间一分钟*/
         String uuid = UUID.randomUUID().toString();
         redisUtil.set(uuid, createText, 60);
-        Cookie cookie = new Cookie("captcha", uuid);
-        response.addCookie(cookie);
+        CookieUtils.setCookie(httpServletRequest,response,"captcha",uuid);
         /*key写入cookie，验证时获取*/
         ServletOutputStream outputStream = response.getOutputStream();
         //ImageIO.write(bufferedImage,"jpg",outputStream);
@@ -55,14 +54,9 @@ public class KaptchaController {
         outputStream.flush();
         outputStream.close();
     }
-    @GetMapping("/login")
-    public void login(HttpServletRequest request, HttpServletResponse response){
-        String captcha= CookieUtils.getCookieValue(request,"captcha");
-        System.out.println(captcha);
-    }
 
-
-    //    @RequestMapping("/render")
+//
+//    @RequestMapping("/render")
 //    public void defaultKaptcha(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
 //        byte[] captchaChallengeAsJpeg = null;
 //        ByteArrayOutputStream jpegOutputStream = new ByteArrayOutputStream();
@@ -70,7 +64,10 @@ public class KaptchaController {
 //            //生产验证码字符串并保存到session中
 //            String createText = defaultKaptcha.createText();
 //            log.info(createText);
+//            String uuid = UUID.randomUUID().toString();
+//            CookieUtils.setCookie(httpServletRequest,httpServletResponse,"captcha",createText);
 //            httpServletRequest.getSession().setAttribute("code", createText);
+//            redisUtil.set(uuid, createText, 60);
 //            //使用生产的验证码字符串返回一个BufferedImage对象并转为byte写入到byte数组中
 //            BufferedImage challenge = defaultKaptcha.createImage(createText);
 //            ImageIO.write(challenge, "jpg", jpegOutputStream);
@@ -90,6 +87,7 @@ public class KaptchaController {
 //        responseOutputStream.flush();
 //        responseOutputStream.close();
 //    }
+
     //验证码验证
     @RequestMapping("/checkCode")
     public boolean imgvrifyControllerDefaultKaptcha(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {

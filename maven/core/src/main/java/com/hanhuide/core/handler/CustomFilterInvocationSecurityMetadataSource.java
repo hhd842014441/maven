@@ -70,7 +70,7 @@ public class CustomFilterInvocationSecurityMetadataSource implements FilterInvoc
     @Override
     public Collection<ConfigAttribute> getAttributes(Object object) throws IllegalArgumentException {
         FilterInvocation fi = (FilterInvocation) object;
-        log.info("请求的url{}", fi.getRequestUrl());
+        log.info("请求的url:{}", fi.getRequestUrl());
         HttpServletRequest request = fi.getRequest();
         //遍历我们初始化的权限数据，找到对应的url对应的权限
         for (Map.Entry<RequestMatcher, Collection<ConfigAttribute>> entry : init().entrySet()) {

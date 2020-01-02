@@ -1,5 +1,6 @@
 package com.hanhuide.core.handler;
 
+import com.alibaba.fastjson.JSON;
 import com.hanhuide.core.enums.ResultEnum;
 import com.hanhuide.core.model.CustomResponseBody;
 import org.springframework.security.core.AuthenticationException;
@@ -28,6 +29,6 @@ public class CustomAuthenticationEntryPoint implements AuthenticationEntryPoint 
         CustomResponseBody responseBody = new CustomResponseBody();
         responseBody.setStatus(ResultEnum.USER_NEED_AUTHORITIES.getCode());
         responseBody.setMsg(ResultEnum.USER_NEED_AUTHORITIES.getMessage());
-        response.getWriter().write(responseBody.toString());
+        response.getWriter().write(JSON.toJSONString(responseBody));
     }
 }

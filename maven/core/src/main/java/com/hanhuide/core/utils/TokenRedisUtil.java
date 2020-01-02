@@ -4,6 +4,7 @@ import com.hanhuide.toolkit.utils.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.stereotype.Component;
 
 /**
  * @program: maven
@@ -12,6 +13,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
  * @create: 2019-12-20 16:31
  * @version: 1.0
  **/
+@Component
 public class TokenRedisUtil {
     @Autowired
     private RedisUtil redisUtil;
@@ -51,6 +53,21 @@ public class TokenRedisUtil {
         return redisTemplate.opsForHash().get(token, "tokenValidTime");
     }
 
+    public Boolean hasKey(String authToken) {
+        return redisUtil.hasKey(authToken);
+    }
+
+    public String hget(String authToken) {
+        return redisUtil.hget(authToken, "expirationTime").toString();
+    }
+
+    public void hset(String authToken) {
+        redisUtil.hset("blacklist", authToken, DateUtil.getTime());
+    }
+    public void deleteKey(String authToken) {
+        redisUtil.deleteKey(authToken);
+    }
+
     /**
      * 查询token下的刷新时间
      *
@@ -84,7 +101,6 @@ public class TokenRedisUtil {
     public void setTokenRefresh(String token, String username, String ip) {
         //刷新时间
         Integer expire = validTime * 24 * 60 * 60 * 1000;
-
         redisUtil.hset(token, "tokenValidTime", DateUtil.getAddDayTime(validTime), expire);
         redisUtil.hset(token, "expirationTime", DateUtil.getAddDaySecond(expirationSeconds), expire);
         redisUtil.hset(token, "username", username, expire);

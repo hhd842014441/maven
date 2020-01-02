@@ -1,5 +1,6 @@
 package com.hanhuide.core.handler;
 
+import com.alibaba.fastjson.JSON;
 import com.hanhuide.core.enums.ResultEnum;
 import com.hanhuide.core.model.CustomResponseBody;
 import org.springframework.security.access.AccessDeniedException;
@@ -28,6 +29,6 @@ public class CustomAccessDeniedHandler implements AccessDeniedHandler {
         CustomResponseBody responseBody = new CustomResponseBody();
         responseBody.setStatus(ResultEnum.USER_NO_ACCESS.getCode());
         responseBody.setMsg(ResultEnum.USER_NO_ACCESS.getMessage());
-        response.getWriter().write(responseBody.toString());
+        response.getWriter().write(JSON.toJSONString(responseBody));
     }
 }

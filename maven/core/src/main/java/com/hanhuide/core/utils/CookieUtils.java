@@ -28,6 +28,7 @@ public class CookieUtils {
      * @return
      */
     public static String getCookieValue(HttpServletRequest request, String cookieName) {
+        log.info(request.getRequestURI());
         return getCookieValue(request, cookieName, false);
     }
 
@@ -43,6 +44,7 @@ public class CookieUtils {
         if (cookieList == null || cookieName == null) {
             return null;
         }
+
         String retValue = null;
         try {
             for (int i = 0; i < cookieList.length; i++) {
