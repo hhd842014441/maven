@@ -101,9 +101,10 @@ public class TokenRedisUtil {
     public void setTokenRefresh(String token, String username, String ip) {
         //刷新时间
         Integer expire = validTime * 24 * 60 * 60 * 1000;
-        redisUtil.hset(token, "tokenValidTime", DateUtil.getAddDayTime(validTime), expire);
-        redisUtil.hset(token, "expirationTime", DateUtil.getAddDaySecond(expirationSeconds), expire);
-        redisUtil.hset(token, "username", username, expire);
-        redisUtil.hset(token, "ip", ip, expire);
+        redisUtil.hset(username, "token", token, expire);
+        redisUtil.hset(username, "tokenValidTime", DateUtil.getAddDayTime(validTime), expire);
+        redisUtil.hset(username, "expirationTime", DateUtil.getAddDaySecond(expirationSeconds), expire);
+        redisUtil.hset(username, "username", username, expire);
+        redisUtil.hset(username, "ip", ip, expire);
     }
 }

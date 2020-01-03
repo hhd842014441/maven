@@ -25,6 +25,7 @@ public class CustomAuthDetails extends WebAuthenticationDetails {
     private final String password;
 
 
+
     public CustomAuthDetails(HttpServletRequest request) {
         super(request);
         this.verifyCode = request.getParameter("validateCodeText");
