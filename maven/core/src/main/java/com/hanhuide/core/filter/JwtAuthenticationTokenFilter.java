@@ -2,6 +2,7 @@ package com.hanhuide.core.filter;
 
 import com.alibaba.fastjson.JSON;
 import com.hanhuide.core.enums.ResultEnum;
+import com.hanhuide.core.exception.ExpiredJwtException;
 import com.hanhuide.core.model.CustomResponseBody;
 import com.hanhuide.core.service.impl.CustomUserDetailsService;
 import com.hanhuide.core.utils.AccessAddressUtil;
@@ -61,8 +62,14 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
         if (authHeader != null && authHeader.startsWith(startsWith)) {
             String authToken = authHeader.substring(startsWith.length());
             System.out.println(authToken);
-            String username = jwtTokenUtil.getUsernameFromToken(authToken);
-            Claims claims = jwtTokenUtil.getAllClaimsFromToken(authToken);
+            String username = null;
+            Claims claims = null;
+            try {
+                username = jwtTokenUtil.getUsernameFromToken(authToken);
+                claims = jwtTokenUtil.getAllClaimsFromToken(authToken);
+            } catch (Exception e) {
+                throw new ExpiredJwtException("token超时");
+            }
             String ip = (String) claims.get("ip");
             //进入黑名单验证
             if (redisUtil.isBlackList(authToken)) {

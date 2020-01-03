@@ -18,7 +18,9 @@ public enum ResultEnum {
     USER_NO_ACCESS(204, "用户无权访问"),
     USER_LOGOUT_SUCCESS(205, "用户登出成功"),
     TOKEN_IS_BLACKLIST(206, "此token为黑名单"),
+    TOKEN_IS_GUOAHI(208, "此token已过时"),
     LOGIN_IS_OVERDUE(207, "登录已失效"),
+
     ;
 
     private Integer code;

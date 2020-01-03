@@ -49,7 +49,7 @@ public class JwtTokenUtil implements Serializable {
     }
 
     private Date calculateExpirationDate(Date createdDate) {
-        return new Date(createdDate.getTime() + expiration);
+        return new Date(createdDate.getTime() + expiration * 1000);
     }
 
     public Boolean validateToken(String token, UserDetails userDetails) {
@@ -62,9 +62,10 @@ public class JwtTokenUtil implements Serializable {
     }
 
     public static void main(String[] args) {
-        String tokemn="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290IiwiaXAiOiIwOjA6MDowOjA6MDowOjEiLCJleHAiOjE1Nzc5NTg4NDYsImlhdCI6MTU3Nzk1ODU0Nn0.78aGErlWt6mmkJGtHHyXiePSJa5kDtTS6OtGs0npB6-kA0u1myB6ptRM8qmghFW_d5KCYXAzmzv9zbotFaJZ0g";
+        String tokemn = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290IiwiaXAiOiIwOjA6MDowOjA6MDowOjEiLCJleHAiOjE1Nzc5NTg4NDYsImlhdCI6MTU3Nzk1ODU0Nn0.78aGErlWt6mmkJGtHHyXiePSJa5kDtTS6OtGs0npB6-kA0u1myB6ptRM8qmghFW_d5KCYXAzmzv9zbotFaJZ0g";
         new JwtTokenUtil().isTokenExpired(tokemn);
     }
+
     public <T> T getClaimFromToken(String token, Function<Claims, T> claimsResolver) {
         final Claims claims = getAllClaimsFromToken(token);
         return claimsResolver.apply(claims);
