@@ -2,7 +2,6 @@ package com.hanhuide.core.filter;
 
 import com.alibaba.fastjson.JSON;
 import com.hanhuide.core.enums.ResultEnum;
-import com.hanhuide.core.exception.ExpiredJwtException;
 import com.hanhuide.core.model.CustomResponseBody;
 import com.hanhuide.core.service.impl.CustomUserDetailsService;
 import com.hanhuide.core.utils.AccessAddressUtil;
@@ -27,12 +26,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-//import com.deceen.common.utils.JwtTokenUtil;
 
 /**
- * @author: zzx
- * @date: 2018/10/15 17:30
- * @description: 确保在一次请求只通过一次filter，而不需要重复执行
+ * 拦截token
  */
 @Component
 @Slf4j
@@ -62,44 +58,32 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
             String username = jwtTokenUtil.getUsernameFromToken(authToken);
             Claims claims = jwtTokenUtil.getAllClaimsFromToken(authToken);
             String ip = (String) claims.get("ip");
-            //进入黑名单验证
-            if (redisUtil.isBlackList(username)) {
-                log.info("用户：{}的token：{}在黑名单之中，拒绝访问", username, authToken);
-                body.setStatus(ResultEnum.TOKEN_IS_BLACKLIST.getCode());
-                body.setMsg(ResultEnum.TOKEN_IS_BLACKLIST.getMessage());
-                response.getWriter().write(JSON.toJSONString(body));
-                return;
-            }
             /*
              * 过期的话，从redis中读取有效时间（比如七天登录有效），再refreshToken（根据以后业务加入，现在直接refresh）
              * 同时，已过期的token加入黑名单
              */
-            if (redisUtil.hasKey(username)) {//判断redis是否有保存
-                if (jwtTokenUtil.isTokenExpired(authToken)) {
-                    //获得redis中用户的token刷新时效
-                    String tokenValidTime = (String) redisUtil.getTokenValidTimeByToken(authToken);
-                    String currentTime = DateUtil.getTime();
-                    if (DateUtil.compareDate(currentTime, tokenValidTime)) {
-                        log.info("{}已超过有效期，不予刷新", authToken);
-                        body.setStatus(ResultEnum.LOGIN_IS_OVERDUE.getCode());
-                        body.setMsg(ResultEnum.LOGIN_IS_OVERDUE.getMessage());
-                        response.getWriter().write(JSON.toJSONString(body));
-                        return;
-                    } else {
-                        //仍在刷新时间内，则刷新token，放入请求头中
-                        ip = (String) redisUtil.getIPByToken(username);//更新ip
-                        //获取请求的ip地址
-                        Map<String, Object> map = new HashMap<>();
-                        map.put("ip", ip);
-                        String jwtToken = jwtTokenUtil.doGenerateToken(map, username);
-                        //更新redis
-                        redisUtil.setTokenRefresh(username, username, ip);
-                        response.setHeader("Authorization", "Bearer " + jwtToken);
-                    }
+            if (jwtTokenUtil.isTokenExpired(authToken)) {
+                //获得redis中用户的token刷新时效
+                String tokenValidTime = (String) redisUtil.getTokenValidTimeByToken(authToken);
+                String currentTime = DateUtil.getTime();
+                if (DateUtil.compareDate(currentTime, tokenValidTime)) {
+                    log.info("{}已超过有效期，不予刷新", authToken);
+                    body.setStatus(ResultEnum.LOGIN_IS_OVERDUE.getCode());
+                    body.setMsg(ResultEnum.LOGIN_IS_OVERDUE.getMessage());
+                    response.getWriter().write(JSON.toJSONString(body));
+                    return;
+                } else {
+                    log.info("仍在刷新时间内，则刷新token，放入请求头中");
+                    ip = (String) redisUtil.getIPByToken(username);//更新ip
+                    //获取请求的ip地址
+                    Map<String, Object> map = new HashMap<>();
+                    map.put("ip", ip);
+                    String jwtToken = jwtTokenUtil.doGenerateToken(map, username);
+                    //更新redis
+                    redisUtil.setTokenRefresh(username, username, ip);
+                    response.setHeader(tokenHeader, jwtToken);
                 }
-
             }
-
             if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
 
                 /*

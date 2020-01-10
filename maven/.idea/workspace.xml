@@ -6,6 +6,12 @@
       <change afterPath="$PROJECT_DIR$/../20191115/qainterface/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../20191115/qainterface/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Spring-Boot-Mybatis-springsecurity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TSR/src/main/java/com/knowology/mapper/MechanismMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TSR/src/main/java/com/knowology/mapper/UserOlineTimeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TSR/src/main/java/com/knowology/model/Mechanism.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TSR/src/main/java/com/knowology/model/UserOlineTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TSR/src/main/java/com/knowology/service/UserOlineTimeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TSR/src/main/java/com/knowology/service/impl/UserOlineTimeServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../backend/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../backend/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../backend/.idea/.name" afterDir="false" />
@@ -345,8 +351,17 @@
       <change afterPath="$PROJECT_DIR$/../cad/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../cad/src/PWfzhua.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../cad/src/SvgParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/error.2020-01-03.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/info.2020-01-03.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/exception/CustomExpiredJwtException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/filter/CustomCORSFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/error.2020-01-05.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/error.2020-01-06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/error.2020-01-07.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/error.2020-01-09.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/info.2020-01-05.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/info.2020-01-06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/info.2020-01-07.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/info.2020-01-09.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../springSecurity-jwt-vue-temple" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../springcloud/src/main/java/com/hanhuide/springcloud/config/KaptchaConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../springcloud/src/main/java/com/hanhuide/springcloud/controller/KaptchaController.java" afterDir="false" />
@@ -1269,19 +1284,31 @@
       <change afterPath="$PROJECT_DIR$/../zhengqingya-java-workspace-master/java-workspace/springboot+QQ第三方登录源码/demo/src/main/resources/qqconnectconfig.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../zhengqingya-java-workspace-master/java-workspace/springboot+QQ第三方登录源码/demo/src/test/java/com/zhengqing/demo/DemoApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/CoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/CoreApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/exception/ExpiredJwtException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/filter/JwtAuthenticationTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/handler/CustomAuthenticationFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/handler/CustomAuthenticationFailureHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/handler/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/handler/CustomAuthenticationProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/model/CustomAuthDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/model/CustomAuthDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/utils/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/utils/JwtTokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/utils/TokenRedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/hanhuide/core/utils/TokenRedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/CoreApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/CoreApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/exception/ExpiredJwtException.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/filter/JwtAuthenticationTokenFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/filter/JwtAuthenticationTokenFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/handler/CustomAuthenticationFailureHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/handler/CustomAuthenticationFailureHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/handler/CustomAuthenticationProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/handler/CustomAuthenticationProvider.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/model/CustomAuthDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/model/CustomAuthDetails.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/utils/JwtTokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/utils/JwtTokenUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/utils/TokenRedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/hanhuide/core/utils/TokenRedisUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toolkit/src/main/java/com/hanhuide/toolkit/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/toolkit/src/main/java/com/hanhuide/toolkit/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toolkit/target/classes/com/hanhuide/toolkit/config/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/toolkit/target/classes/com/hanhuide/toolkit/config/RedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/error.2020-01-03.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/error.2020-01-03.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven.iml" beforeDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1315,13 +1342,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1412,13 +1440,19 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1cdf96aa-3ac3-4dc7-b915-8b63ff169787" name="Default Changelist" comment="" />
+      <changelist id="3be7c188-805d-4aea-a51f-e188df190041" name="Default Changelist" comment="" />
       <created>1577796855696</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577796855696</updated>
       <workItem from="1577796863840" duration="6246000" />
       <workItem from="1577806606326" duration="66159000" />
+      <workItem from="1578027074178" duration="4571000" />
+      <workItem from="1578049091790" duration="38620000" />
+      <workItem from="1578564994076" duration="452000" />
+      <workItem from="1578628133651" duration="3000" />
+      <workItem from="1578628509653" duration="126000" />
+      <workItem from="1578634742891" duration="262000" />
     </task>
     <task id="LOCAL-00001" summary="token实现验证码问题">
       <created>1577877367478</created>
@@ -1434,7 +1468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577962595617</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="token 单用户登录已成功">
+      <created>1578024632119</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578024632119</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1445,7 +1486,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -1455,7 +1498,8 @@
     <MESSAGE value="token实现验证码问题" />
     <MESSAGE value="token实现验证码怎么弄呢" />
     <MESSAGE value="token 验证已经实现 但是登出无法加入黑名单" />
-    <option name="LAST_COMMIT_MESSAGE" value="token 验证已经实现 但是登出无法加入黑名单" />
+    <MESSAGE value="token 单用户登录已成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="token 单用户登录已成功" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Inspections" timestamp="1577885768025">

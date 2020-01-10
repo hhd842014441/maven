@@ -23,7 +23,7 @@ public class CustomAuthDetails extends WebAuthenticationDetails {
     private final String verifyCode;
     private final String username;
     private final String password;
-
+    private final String captcha;
 
 
     public CustomAuthDetails(HttpServletRequest request) {
@@ -31,6 +31,7 @@ public class CustomAuthDetails extends WebAuthenticationDetails {
         this.verifyCode = request.getParameter("validateCodeText");
         this.username = request.getParameter("username");
         this.password = request.getParameter("password");
+        this.captcha = request.getParameter("captcha");
     }
 
     @Override
@@ -39,7 +40,7 @@ public class CustomAuthDetails extends WebAuthenticationDetails {
                 "verifyCode='" + verifyCode + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", captcha='" + captcha + '\'' +
                 '}';
     }
-
 }

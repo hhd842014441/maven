@@ -2,7 +2,7 @@ package com.hanhuide.core.handler;
 
 import com.alibaba.fastjson.JSON;
 import com.hanhuide.core.enums.ResultEnum;
-import com.hanhuide.core.exception.ExpiredJwtException;
+import com.hanhuide.core.exception.CustomExpiredJwtException;
 import com.hanhuide.core.model.CustomResponseBody;
 import org.springframework.security.authentication.*;
 import org.springframework.security.core.AuthenticationException;
@@ -45,7 +45,7 @@ public class CustomAuthenticationFailureHandler implements AuthenticationFailure
             ResultEnum.USER_LOGIN_FAILED.setMessage("用户密码已过期！");
 //        } else if(exception instanceof TokenInvalidException) {
 //            ResultEnum.USER_LOGIN_FAILED .setMessage( "登陆信息已过期,请重新登陆";
-        } else if (exception instanceof ExpiredJwtException) {
+        } else if (exception instanceof CustomExpiredJwtException) {
             ResultEnum.TOKEN_IS_GUOAHI.setMessage("token过时了");
         } else {
             ResultEnum.USER_LOGIN_FAILED.setMessage("认证失败，请联系网站管理员！");

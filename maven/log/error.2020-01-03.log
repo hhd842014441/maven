@@ -1,7 +1,7 @@
 2020-01-03 12:05:28 ERROR [com.alibaba.druid.pool.DruidDataSource            ] : testWhileIdle is true, validationQuery not set
 2020-01-03 12:05:29 ERROR [com.baomidou.mybatisplus.MybatisConfiguration     ] : mapper[com.hanhuide.core.mapper.RoleMapper.getAllRoleList] is ignored, because it's exists, maybe from xml file
 2020-01-03 12:08:40 ERROR [org.apache.juli.logging.DirectJDKLog              ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-com.hanhuide.core.exception.ExpiredJwtException: TOKEN失效
+com.hanhuide.core.exception.CustomExpiredJwtException: TOKEN失效
 	at com.hanhuide.core.utils.JwtTokenUtil.getAllClaimsFromToken(JwtTokenUtil.java:88)
 	at com.hanhuide.core.utils.JwtTokenUtil.getClaimFromToken(JwtTokenUtil.java:67)
 	at com.hanhuide.core.utils.JwtTokenUtil.getUsernameFromToken(JwtTokenUtil.java:58)

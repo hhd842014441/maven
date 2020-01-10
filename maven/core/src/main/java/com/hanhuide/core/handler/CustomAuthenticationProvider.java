@@ -43,7 +43,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         if (StringUtils.isEmptyOrWhitespace(validateCodeText)) {
             throw new DisabledException("请输入验证码");
         }
-        if (!kaptchaVerify(validateCodeText)) {
+        if (!kaptchaVerify(validateCodeText,details.getCaptcha())) {
             throw new DisabledException("验证码输入错误");
         }
         // userDetails为数据库中查询到的用户信息
@@ -59,16 +59,10 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
         return new UsernamePasswordAuthenticationToken(details.getUsername(), new BCryptPasswordEncoder().encode(details.getPassword()), userDetails.getAuthorities());
     }
-
-
-    private boolean kaptchaVerify(String validateCodeText) {
+    private boolean kaptchaVerify(String validateCodeText,String codeText) {
         //获取当前线程绑定的request对象
         try {
-            HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-            log.info(request.getRequestURI());
-            String uuid = CookieUtils.getCookieValue(request, "captcha").toLowerCase();
-            String captcha = (String) redisUtil.get(uuid);
-            log.info(captcha + "====================");
+            String captcha = (String) redisUtil.get(codeText);
             validateCodeText = validateCodeText.toLowerCase();
             log.info("验证码：" + captcha.toLowerCase() + "用户输入：" + validateCodeText);
             return captcha.toLowerCase().equals(validateCodeText);

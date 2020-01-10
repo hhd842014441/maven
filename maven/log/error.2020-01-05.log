@@ -1,0 +1,2 @@
+2020-01-05 13:44:39 ERROR [com.alibaba.druid.pool.DruidDataSource            ] : testWhileIdle is true, validationQuery not set
+2020-01-05 13:44:40 ERROR [com.baomidou.mybatisplus.MybatisConfiguration     ] : mapper[com.hanhuide.core.mapper.RoleMapper.getAllRoleList] is ignored, because it's exists, maybe from xml file
