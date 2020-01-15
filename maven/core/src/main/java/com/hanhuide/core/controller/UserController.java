@@ -2,7 +2,10 @@ package com.hanhuide.core.controller;
 
 import com.baomidou.mybatisplus.plugins.Page;
 import com.hanhuide.core.input.PageInput;
+import com.hanhuide.core.model.CustomResponseBody;
+import com.hanhuide.core.model.SysRole;
 import com.hanhuide.core.model.SysUser;
+import com.hanhuide.core.service.RoleService;
 import com.hanhuide.core.service.UserService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,13 +30,24 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserService userService;
+    @Autowired
+    private RoleService roleService;
 
     @ApiOperation(value = "获取用户列表", notes = "获取用户列表")
     @PostMapping("/list")
-    public List<SysUser> list(@RequestBody PageInput pageInput) {
+    public CustomResponseBody list(@RequestBody PageInput pageInput) {
+        CustomResponseBody body = new CustomResponseBody();
         Page<SysUser> userPage = new Page<>(pageInput.getCurrent(), pageInput.getNum());//参数一是当前页，参数二是每页个数
-        return userService.findAll(userPage, null);
+        body.setResult(userService.findAll(userPage, null));
+        return body;
     }
 
+    @ApiOperation(value = "加载菜单树接口")
+    @PostMapping("menus")
+    public Object menuButtonTree(String username) {
+        CustomResponseBody body = new CustomResponseBody();
+        body.setResult(userService.getMenuTree(username));
+        return body;
+    }
 
 }

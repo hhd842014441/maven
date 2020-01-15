@@ -6,6 +6,7 @@ import com.hanhuide.core.model.SysMenu;
 import com.hanhuide.core.model.SysUser;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * @Author:YangWenbin
@@ -28,7 +29,8 @@ public interface UserService {
      * @param username
      * @return
      */
-    CustomResponseBody getMenuTree(String username);
+
+    Set<SysMenu> getMenuTree(String username);
 
     Object getAllMenuTree(List<SysMenu> sysMenus);
 

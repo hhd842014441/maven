@@ -25,7 +25,8 @@
         select * from sys_role order by ROLE_ID desc
     </select>
     <select id="selectByRoleName" parameterType="String" resultMap="PerResultMap">
-        select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME,
+        sys_menu.PARENT_ID,sys_menu.MENU_ID,sys_menu.COMPONENT,sys_menu.ORDER_NUM
         from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
         sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
         sys_role_menu.MENU_ID where sys_role.ROLE_NAME = '${roleName}'

@@ -6,19 +6,15 @@ import com.hanhuide.core.mapper.RoleMapper;
 import com.hanhuide.core.mapper.UserMapper;
 import com.hanhuide.core.model.CustomResponseBody;
 import com.hanhuide.core.model.SysMenu;
+import com.hanhuide.core.model.SysRole;
 import com.hanhuide.core.model.SysUser;
 import com.hanhuide.core.service.UserService;
-import com.hanhuide.toolkit.utils.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @program: maven
@@ -38,9 +34,6 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private MenuMapper menuMapper;
-
-    @Resource
-    private RedisUtil redisUtil;
 
     /**
      * 获取用户信息
@@ -86,8 +79,17 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     @Override
-    public CustomResponseBody getMenuTree(String username) {
-        return null;
+    public Set<SysMenu> getMenuTree(String username) {
+        Set<SysMenu> menus=new HashSet<>();
+        SysUser user = findByUsername(username);
+        List<SysRole> roles = user.getChildRole();
+        for (SysRole role : roles) {
+            SysRole sysRole = roleMapper.selectByRoleName(role.getRoleName());
+            for(SysMenu sysMenu:sysRole.getChildMenus()){
+                menus.add(sysMenu);
+            }
+        }
+        return menus;
     }
 
     /**
@@ -127,7 +129,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<SysUser> findAll(Page<SysUser> userPage, Object o) {
-        return userMapper.selectPage(userPage,null);
+        return userMapper.selectPage(userPage, null);
     }
 
 }
