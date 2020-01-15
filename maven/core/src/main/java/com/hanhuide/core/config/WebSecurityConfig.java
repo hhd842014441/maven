@@ -8,6 +8,7 @@ import com.hanhuide.core.handler.*;
 import com.hanhuide.core.service.impl.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.ObjectPostProcessor;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -94,6 +95,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) throws Exception {
         // 设置拦截忽略文件夹，可以对静态资源放行
         web.ignoring().antMatchers("/css/**", "/js/**", "/fonts/**", "/images/**", "/vendor/**")
-                .antMatchers("/kaptcha/render", "/favicon.ico", "/qq", "zhifubao");
+                .antMatchers("/kaptcha/render", "/favicon.ico", "/qq", "zhifubao")
+        .antMatchers(HttpMethod.OPTIONS,"/**")
+        .antMatchers(HttpMethod.POST,"/**");
     }
 }

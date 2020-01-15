@@ -4,6 +4,7 @@ import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
 import com.hanhuide.driver.dataSource.DataSourceNames;
 import com.hanhuide.driver.dataSource.DynamicDataSource;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -27,14 +28,14 @@ public class DynamicDataSourceConfig {
      * 创建 DataSource Bean
      */
 
-    @Bean
+    @Bean(name = DataSourceNames.MASTER)
     @ConfigurationProperties("spring.datasource.master")
     public DataSource oneDataSource() {
         DataSource dataSource = DruidDataSourceBuilder.create().build();
         return dataSource;
     }
 
-    @Bean
+    @Bean(name = DataSourceNames.CLUSTER)
     @ConfigurationProperties("spring.datasource.cluster")
     public DataSource twoDataSource() {
         DataSource dataSource = DruidDataSourceBuilder.create().build();
@@ -44,10 +45,9 @@ public class DynamicDataSourceConfig {
     /**
      * 如果还有数据源,在这继续添加 DataSource Bean
      */
-
     @Bean
     @Primary
-    public DynamicDataSource dataSource(DataSource oneDataSource, DataSource twoDataSource) {
+    public DynamicDataSource dataSource(@Qualifier(DataSourceNames.MASTER) DataSource oneDataSource, @Qualifier(DataSourceNames.CLUSTER) DataSource twoDataSource) {
         Map<Object, Object> targetDataSources = new HashMap<>();
         targetDataSources.put(DataSourceNames.MASTER, oneDataSource);
         targetDataSources.put(DataSourceNames.CLUSTER, twoDataSource);

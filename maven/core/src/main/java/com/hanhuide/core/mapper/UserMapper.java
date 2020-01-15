@@ -3,6 +3,9 @@ package com.hanhuide.core.mapper;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.hanhuide.core.model.SysUser;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 
 /**
@@ -19,7 +22,7 @@ public interface UserMapper extends BaseMapper<SysUser> {
      * @param username
      * @return
      */
-    SysUser selectByUserName(@Param("username")String username);
+    SysUser selectByUserName(@Param("username") String username);
 
     /**
      * 通过用户名称获取密码
@@ -44,4 +47,5 @@ public interface UserMapper extends BaseMapper<SysUser> {
      * @return
      */
     SysUser selectUserByUsername(String username);
+
 }

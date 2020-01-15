@@ -1,5 +1,6 @@
 package com.hanhuide.core.service.impl;
 
+import com.baomidou.mybatisplus.plugins.Page;
 import com.hanhuide.core.mapper.MenuMapper;
 import com.hanhuide.core.mapper.RoleMapper;
 import com.hanhuide.core.mapper.UserMapper;
@@ -122,6 +123,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<SysMenu> getMenuTreeByPid(Long parentId) {
         return menuMapper.getParentMenu(parentId);
+    }
+
+    @Override
+    public List<SysUser> findAll(Page<SysUser> userPage, Object o) {
+        return userMapper.selectPage(userPage,null);
     }
 
 }

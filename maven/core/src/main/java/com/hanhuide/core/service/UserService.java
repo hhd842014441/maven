@@ -1,5 +1,6 @@
 package com.hanhuide.core.service;
 
+import com.baomidou.mybatisplus.plugins.Page;
 import com.hanhuide.core.model.CustomResponseBody;
 import com.hanhuide.core.model.SysMenu;
 import com.hanhuide.core.model.SysUser;
@@ -15,9 +16,7 @@ import java.util.List;
 
 public interface UserService {
 
-
     SysUser findByUsername(String username);
-
 
     CustomResponseBody login(String username, String password);
 
@@ -35,5 +34,5 @@ public interface UserService {
 
     List<SysMenu> getMenuTreeByPid(Long parentId);
 
-
+    List<SysUser> findAll(Page<SysUser> userPage, Object o);
 }

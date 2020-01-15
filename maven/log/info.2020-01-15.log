@@ -1,0 +1,812 @@
+2020-01-15 11:45:47 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 11:45:47 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 9 ms | infoï¼ statement-2 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 11:45:47 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 11:45:49 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 11:45:49 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 2 ms | infoï¼ statement-2 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 11:45:49 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 11:45:51 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 11:45:51 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 1 ms | infoï¼ statement-2 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 11:45:51 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 11:45:53 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 11:45:53 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 5 ms | infoï¼ statement-2 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 11:45:53 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 11:47:01 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 11:47:01 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 2 ms | infoï¼ statement-2 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 11:47:01 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 11:47:39 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 11:47:39 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 4 ms | infoï¼ statement-2 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 11:47:39 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 11:50:02 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 11:50:02 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 2 ms | infoï¼ statement-2 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 11:50:02 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 11:50:37 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 11:50:37 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 1 ms | infoï¼ statement-2 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 11:50:37 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 11:50:44 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 11:50:44 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 2 ms | infoï¼ statement-2 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 11:50:44 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 11:50:46 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 11:50:46 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 1 ms | infoï¼ statement-2 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 11:50:46 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 13:46:50 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='36771', username='root', password='123456', captcha='686f91ce-1715-43ea-946e-e93d9913f218'}
+2020-01-15 13:46:50 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：36777用户输入：36771
+2020-01-15 13:47:24 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='10876', username='root', password='123456', captcha='a0c01d4d-20b0-4086-8626-235698e9c4f4'}
+2020-01-15 13:47:24 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：10876用户输入：10876
+2020-01-15 13:47:24 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-15 13:47:24 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 19 ms | infoï¼ statement-3 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-15 13:47:24 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-15 13:47:24 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-15 13:47:24 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-15 13:47:24 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-15 13:47:25 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$3b80BevReIM7XStyN2cFneEdS4./gpfIXGEtfI9L.CoqeSarqdBca
+2020-01-15 13:47:25 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='10876', username='root', password='123456', captcha='a0c01d4d-20b0-4086-8626-235698e9c4f4'}
+2020-01-15 13:47:25 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-15 13:47:25 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 13:47:25 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 5 ms | infoï¼ statement-3 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 13:47:25 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 13:56:43 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 13:56:43 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 3 ms | infoï¼ statement-3 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 13:56:43 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 13:57:38 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 13:57:38 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 3 ms | infoï¼ statement-3 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 13:57:38 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 13:57:52 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 13:57:52 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 3 ms | infoï¼ statement-3 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 13:57:52 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 13:58:24 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 13:58:24 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 2 ms | infoï¼ statement-3 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 13:58:24 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 14:06:02 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 14:06:02 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 5 ms | infoï¼ statement-3 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 14:06:02 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 14:06:16 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 14:06:16 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 2 ms | infoï¼ statement-3 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 14:06:16 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 14:06:30 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/backup/findRecords
+2020-01-15 14:06:30 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 2 ms | infoï¼ statement-3 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 14:06:30 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 15:12:40 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 13816 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 15:12:40 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 15:12:41 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 15:12:41 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 15:12:41 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-01-15 15:12:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:12:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$30230bd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:12:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:12:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:12:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@512575e9' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:12:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:12:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:12:42 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 15:12:42 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:12:42 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 15:12:42 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 15:12:43 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 15:12:43 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2432 ms
+2020-01-15 15:12:43 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-15 15:12:43",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-15 15:12:43",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-15 15:12:43 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-15 15:12:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-15 15:12:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-15 15:12:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-15 15:12:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-15 15:12:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-15 15:12:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-15 15:12:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-15 15:12:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-15 15:12:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-15 15:12:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-15 15:12:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a21c74, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a5abd3c, org.springframework.security.web.header.HeaderWriterFilter@61b838f2, org.springframework.security.web.authentication.logout.LogoutFilter@59e7564b, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@37e0056e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7661e474, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3a2546d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25c1f5ee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@424f02b8, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@21dea711, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b8a144e, org.springframework.security.web.session.SessionManagementFilter@5ebbde60, org.springframework.security.web.access.ExceptionTranslationFilter@4e974b9e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c8f4bc7]
+2020-01-15 15:12:45 WARN  [amework.context.support.AbstractApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MASTER' defined in class path resource [com/hanhuide/driver/config/TransactionConfig.class]: Unsatisfied dependency expressed through method 'transactionMASTER' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=MASTER)}
+2020-01-15 15:12:45 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-0} closing ...
+2020-01-15 15:12:45 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} closing ...
+2020-01-15 15:12:45 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} closed
+2020-01-15 15:12:45 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Stopping service [Tomcat]
+2020-01-15 15:12:45 INFO  [e.logging.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-15 15:18:39 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 23000 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 15:18:39 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 15:18:40 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 15:18:40 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 15:18:40 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2020-01-15 15:18:40 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:18:40 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$c208bdad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:18:40 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:18:40 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:18:40 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2cc75074' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:18:40 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:18:40 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:18:41 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 15:18:41 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:18:41 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 15:18:41 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 15:18:41 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 15:18:41 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2205 ms
+2020-01-15 15:18:41 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-15 15:18:41",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-15 15:18:41",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-15 15:18:41 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-15 15:18:43 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-15 15:18:43 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-15 15:18:43 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-15 15:18:43 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-15 15:18:43 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-15 15:18:43 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-15 15:18:43 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-15 15:18:43 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-15 15:18:43 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-15 15:18:43 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-15 15:18:43 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c234920, org.springframework.security.web.context.SecurityContextPersistenceFilter@61a87366, org.springframework.security.web.header.HeaderWriterFilter@48567727, org.springframework.security.web.authentication.logout.LogoutFilter@45e140ae, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@6371cf2f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@63f9ddf9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@35e74e08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@dada335, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@440ef8d, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@29bd85db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ddeb27f, org.springframework.security.web.session.SessionManagementFilter@259287ac, org.springframework.security.web.access.ExceptionTranslationFilter@6afbe6a1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1894fa9f]
+2020-01-15 15:18:43 WARN  [amework.context.support.AbstractApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'wode' defined in class path resource [com/hanhuide/driver/config/TransactionConfig.class]: Unsatisfied dependency expressed through method 'transactionMASTER' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=MASTER)}
+2020-01-15 15:18:43 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-0} closing ...
+2020-01-15 15:18:43 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} closing ...
+2020-01-15 15:18:43 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} closed
+2020-01-15 15:18:43 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Stopping service [Tomcat]
+2020-01-15 15:18:43 INFO  [e.logging.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-15 15:24:14 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 17952 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 15:24:14 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 15:24:15 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 15:24:15 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 15:24:15 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2020-01-15 15:24:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:24:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$86d439f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:24:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:24:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:24:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2264ea32' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:24:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:24:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:24:16 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 15:24:16 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:24:16 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 15:24:16 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 15:24:16 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 15:24:16 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2178 ms
+2020-01-15 15:24:17 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Stopping service [Tomcat]
+2020-01-15 15:24:17 WARN  [amework.context.support.AbstractApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-01-15 15:24:17 INFO  [e.logging.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-15 15:27:01 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 14636 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 15:27:01 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 15:27:03 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 15:27:03 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 15:27:03 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2020-01-15 15:27:03 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:27:03 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$e578403f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:27:03 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:27:03 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:27:03 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3c74aa0d' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:27:03 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:27:03 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:27:04 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 15:27:04 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:27:04 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 15:27:04 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 15:27:04 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 15:27:04 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3035 ms
+2020-01-15 15:27:04 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Stopping service [Tomcat]
+2020-01-15 15:27:04 WARN  [amework.context.support.AbstractApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-01-15 15:27:04 INFO  [e.logging.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-15 15:29:04 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 22396 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 15:29:04 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 15:29:05 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 15:29:05 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 15:29:05 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 32ms. Found 0 Redis repository interfaces.
+2020-01-15 15:29:05 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:05 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$2198cd55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:05 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:05 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:05 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2e869098' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:05 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:05 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:06 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 15:29:06 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:29:06 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 15:29:06 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 15:29:06 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 15:29:06 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2195 ms
+2020-01-15 15:29:06 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Stopping service [Tomcat]
+2020-01-15 15:29:06 WARN  [amework.context.support.AbstractApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-01-15 15:29:06 INFO  [e.logging.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-15 15:29:23 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 21384 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 15:29:23 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 15:29:24 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 15:29:24 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 15:29:24 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2020-01-15 15:29:25 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:25 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$2dee5868] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:25 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:25 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:25 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@340a8894' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:25 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:25 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:29:25 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 15:29:25 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:29:25 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 15:29:25 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 15:29:25 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 15:29:25 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2120 ms
+2020-01-15 15:29:26 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Stopping service [Tomcat]
+2020-01-15 15:29:26 WARN  [amework.context.support.AbstractApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-01-15 15:29:26 INFO  [e.logging.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-15 15:30:36 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 1020 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 15:30:36 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 15:30:37 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 15:30:37 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 15:30:37 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-01-15 15:30:38 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:30:38 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$820a60d5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:30:38 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:30:38 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:30:38 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@11900483' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:30:38 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:30:38 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:30:38 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 15:30:38 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:30:38 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 15:30:38 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 15:30:38 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 15:30:38 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2064 ms
+2020-01-15 15:30:39 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-15 15:30:39",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-15 15:30:39",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-15 15:30:39 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-15 15:30:40 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-15 15:30:40 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-15 15:30:40 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-15 15:30:40 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-15 15:30:40 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-15 15:30:40 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-15 15:30:40 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-15 15:30:40 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-15 15:30:40 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-15 15:30:40 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-15 15:30:40 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68c34db2, org.springframework.security.web.context.SecurityContextPersistenceFilter@5db0003d, org.springframework.security.web.header.HeaderWriterFilter@6bf570c, org.springframework.security.web.authentication.logout.LogoutFilter@712cd5d3, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@46a795de, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57b9389f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1ab53860, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@589fb74d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23b1aa9, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6b25ef1c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b95bdb0, org.springframework.security.web.session.SessionManagementFilter@935d3f9, org.springframework.security.web.access.ExceptionTranslationFilter@54895681, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bf4680c]
+2020-01-15 15:30:40 INFO  [ng.web.PropertySourcedRequestMappingHandlerMapping] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-15 15:30:41 INFO  [scheduling.concurrent.ExecutorConfigurationSupport] : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-15 15:30:41 INFO  [io.lettuce.core.EpollProvider                     ] : Starting without optional epoll library
+2020-01-15 15:30:41 INFO  [io.lettuce.core.KqueueProvider                    ] : Starting without optional kqueue library
+2020-01-15 15:30:42 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2020-01-15 15:30:42 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2020-01-15 15:30:42 INFO  [ion.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2020-01-15 15:30:43 INFO  [ng.annotation.ScheduledAnnotationBeanPostProcessor] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-15 15:30:43 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:30:43 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 9001 (http) with context path ''
+2020-01-15 15:30:43 INFO  [org.springframework.boot.StartupInfoLogger        ] : Started CoreApplication in 7.262 seconds (JVM running for 8.404)
+2020-01-15 15:32:18 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 9024 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 15:32:18 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 15:32:19 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 15:32:19 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 15:32:19 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2020-01-15 15:32:19 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:32:20 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$38a8fffd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:32:20 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:32:20 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:32:20 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@298f0a0b' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:32:20 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:32:20 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:32:20 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 15:32:20 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:32:20 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 15:32:20 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 15:32:20 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 15:32:20 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2164 ms
+2020-01-15 15:32:21 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-15 15:32:21",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-15 15:32:21",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-15 15:32:21 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-15 15:32:22 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-15 15:32:22 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-15 15:32:22 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-15 15:32:22 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-15 15:32:22 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-15 15:32:22 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-15 15:32:22 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-15 15:32:22 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-15 15:32:22 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-15 15:32:22 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-15 15:32:22 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6cdbe5ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f6c2763, org.springframework.security.web.header.HeaderWriterFilter@25c1f5ee, org.springframework.security.web.authentication.logout.LogoutFilter@4bcdd11, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@42679fc2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@21dea711, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2edb2f8b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@274fdea6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6793f752, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2ee92e7d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14b8a751, org.springframework.security.web.session.SessionManagementFilter@7bf018dd, org.springframework.security.web.access.ExceptionTranslationFilter@2a5abd3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1132baa3]
+2020-01-15 15:32:22 WARN  [amework.context.support.AbstractApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MASTER' defined in class path resource [com/hanhuide/driver/config/TransactionConfig.class]: Unsatisfied dependency expressed through method 'transaction' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=MASTER)}
+2020-01-15 15:32:22 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-0} closing ...
+2020-01-15 15:32:22 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} closing ...
+2020-01-15 15:32:22 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} closed
+2020-01-15 15:32:22 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Stopping service [Tomcat]
+2020-01-15 15:32:22 INFO  [e.logging.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-15 15:37:47 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 9384 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 15:37:47 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 15:37:48 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 15:37:48 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 15:37:48 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-01-15 15:37:49 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:37:49 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$1ff137dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:37:49 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:37:49 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:37:49 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7c847072' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:37:49 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:37:49 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:37:49 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 15:37:49 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:37:49 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 15:37:49 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 15:37:49 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 15:37:49 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1979 ms
+2020-01-15 15:37:50 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Stopping service [Tomcat]
+2020-01-15 15:37:50 WARN  [amework.context.support.AbstractApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-01-15 15:37:50 INFO  [e.logging.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-15 15:40:40 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 17640 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 15:40:40 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 15:40:42 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 15:40:42 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 15:40:42 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-01-15 15:40:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:40:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$285fdb9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:40:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:40:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:40:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1947596f' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:40:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:40:42 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:40:43 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 15:40:43 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:40:43 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 15:40:43 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 15:40:43 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 15:40:43 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2130 ms
+2020-01-15 15:40:43 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-15 15:40:43",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-15 15:40:43",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-15 15:40:43 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-15 15:40:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-15 15:40:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-15 15:40:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-15 15:40:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-15 15:40:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-15 15:40:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-15 15:40:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-15 15:40:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-15 15:40:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-15 15:40:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-15 15:40:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b5ac347, org.springframework.security.web.context.SecurityContextPersistenceFilter@58c42c8c, org.springframework.security.web.header.HeaderWriterFilter@633ddc0c, org.springframework.security.web.authentication.logout.LogoutFilter@13ef7fa1, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@7a83ccd2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d6039df, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@eaf8427, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23564dd2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7de147e9, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@4e4395c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57b9389f, org.springframework.security.web.session.SessionManagementFilter@1471b98d, org.springframework.security.web.access.ExceptionTranslationFilter@1510b9a2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b832551]
+2020-01-15 15:40:45 INFO  [ng.web.PropertySourcedRequestMappingHandlerMapping] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-15 15:40:45 INFO  [scheduling.concurrent.ExecutorConfigurationSupport] : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-15 15:40:45 INFO  [io.lettuce.core.EpollProvider                     ] : Starting without optional epoll library
+2020-01-15 15:40:45 INFO  [io.lettuce.core.KqueueProvider                    ] : Starting without optional kqueue library
+2020-01-15 15:40:46 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2020-01-15 15:40:46 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2020-01-15 15:40:46 INFO  [ion.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2020-01-15 15:40:47 INFO  [ng.annotation.ScheduledAnnotationBeanPostProcessor] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-15 15:40:47 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:40:47 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 9001 (http) with context path ''
+2020-01-15 15:40:47 INFO  [org.springframework.boot.StartupInfoLogger        ] : Started CoreApplication in 7.045 seconds (JVM running for 8.323)
+2020-01-15 15:43:41 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 20248 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 15:43:41 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 15:43:42 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 15:43:42 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 15:43:42 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-01-15 15:43:43 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:43:43 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$e6294cd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:43:43 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:43:43 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:43:43 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6a818392' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:43:43 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:43:43 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 15:43:43 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 15:43:43 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:43:43 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 15:43:43 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 15:43:43 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 15:43:43 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2053 ms
+2020-01-15 15:43:44 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-15 15:43:44",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-15 15:43:44",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-15 15:43:44 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-15 15:43:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-15 15:43:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-15 15:43:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-15 15:43:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-15 15:43:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-15 15:43:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-15 15:43:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-15 15:43:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-15 15:43:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-15 15:43:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-15 15:43:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f5c30b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@14457a95, org.springframework.security.web.header.HeaderWriterFilter@164d01ba, org.springframework.security.web.authentication.logout.LogoutFilter@6f315b08, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@38588dea, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7159d601, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7a572ea0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10e9a5fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3915e7c3, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@410fc508, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62e73ab6, org.springframework.security.web.session.SessionManagementFilter@5ac044ef, org.springframework.security.web.access.ExceptionTranslationFilter@52621501, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49cc9b2a]
+2020-01-15 15:43:45 INFO  [ng.web.PropertySourcedRequestMappingHandlerMapping] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-15 15:43:45 INFO  [scheduling.concurrent.ExecutorConfigurationSupport] : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-15 15:43:46 INFO  [io.lettuce.core.EpollProvider                     ] : Starting without optional epoll library
+2020-01-15 15:43:46 INFO  [io.lettuce.core.KqueueProvider                    ] : Starting without optional kqueue library
+2020-01-15 15:43:46 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2020-01-15 15:43:46 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2020-01-15 15:43:46 INFO  [ion.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2020-01-15 15:43:47 INFO  [ng.annotation.ScheduledAnnotationBeanPostProcessor] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-15 15:43:47 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting ProtocolHandler ["http-nio-9001"]
+2020-01-15 15:43:47 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 9001 (http) with context path ''
+2020-01-15 15:43:47 INFO  [org.springframework.boot.StartupInfoLogger        ] : Started CoreApplication in 6.967 seconds (JVM running for 7.99)
+2020-01-15 16:35:24 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 2508 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 16:35:24 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 16:35:26 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 16:35:26 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 16:35:26 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 35ms. Found 0 Redis repository interfaces.
+2020-01-15 16:35:27 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:35:27 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$47cf8aec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:35:27 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:35:27 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:35:27 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@70e94ecb' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:35:27 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:35:27 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:35:27 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 16:35:27 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 16:35:27 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 16:35:27 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 16:35:27 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 16:35:27 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2930 ms
+2020-01-15 16:35:28 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-15 16:35:28",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-15 16:35:28",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-15 16:35:28 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-15 16:35:30 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-15 16:35:30 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-15 16:35:30 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-15 16:35:30 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-15 16:35:30 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-15 16:35:30 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-15 16:35:30 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-15 16:35:30 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-15 16:35:30 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-15 16:35:30 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-15 16:35:30 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37d699a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@55c1ced9, org.springframework.security.web.header.HeaderWriterFilter@4e48462d, org.springframework.security.web.authentication.logout.LogoutFilter@5d7f8467, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@3fdcde7a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@935d3f9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6bf570c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11826398, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33d230ce, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7de147e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f42b194, org.springframework.security.web.session.SessionManagementFilter@10a907ec, org.springframework.security.web.access.ExceptionTranslationFilter@642c6461, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bcdd11]
+2020-01-15 16:35:30 INFO  [ng.web.PropertySourcedRequestMappingHandlerMapping] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-15 16:35:31 INFO  [scheduling.concurrent.ExecutorConfigurationSupport] : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-15 16:35:31 INFO  [io.lettuce.core.EpollProvider                     ] : Starting without optional epoll library
+2020-01-15 16:35:31 INFO  [io.lettuce.core.KqueueProvider                    ] : Starting without optional kqueue library
+2020-01-15 16:35:32 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2020-01-15 16:35:32 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2020-01-15 16:35:32 INFO  [ion.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2020-01-15 16:35:33 INFO  [ng.annotation.ScheduledAnnotationBeanPostProcessor] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-15 16:35:33 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting ProtocolHandler ["http-nio-9001"]
+2020-01-15 16:35:33 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 9001 (http) with context path ''
+2020-01-15 16:35:33 INFO  [org.springframework.boot.StartupInfoLogger        ] : Started CoreApplication in 9.765 seconds (JVM running for 11.351)
+2020-01-15 16:36:53 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 16604 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 16:36:53 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 16:36:54 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 16:36:54 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 16:36:54 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 42ms. Found 0 Redis repository interfaces.
+2020-01-15 16:36:55 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:36:55 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$655c2cfa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:36:55 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:36:55 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:36:55 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6e7c351d' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:36:55 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:36:55 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:36:55 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 16:36:55 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 16:36:55 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 16:36:55 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 16:36:56 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 16:36:56 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2941 ms
+2020-01-15 16:36:56 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-15 16:36:56",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-15 16:36:56",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-15 16:36:56 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-15 16:36:58 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-15 16:36:58 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-15 16:36:58 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-15 16:36:58 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-15 16:36:58 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-15 16:36:58 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-15 16:36:58 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-15 16:36:58 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-15 16:36:58 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-15 16:36:58 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-15 16:36:58 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', POST], []
+2020-01-15 16:36:58 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bf570c, org.springframework.security.web.context.SecurityContextPersistenceFilter@159ac15f, org.springframework.security.web.header.HeaderWriterFilter@6befbb12, org.springframework.security.web.authentication.logout.LogoutFilter@7159d601, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@6fa02932, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4bcdd11, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@76a6f045, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7af1d072, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c5ca0b6, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@54895681, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1796b2d4, org.springframework.security.web.session.SessionManagementFilter@799f354a, org.springframework.security.web.access.ExceptionTranslationFilter@2e4eda17, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53d30d23]
+2020-01-15 16:36:58 INFO  [ng.web.PropertySourcedRequestMappingHandlerMapping] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-15 16:36:59 INFO  [scheduling.concurrent.ExecutorConfigurationSupport] : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-15 16:36:59 INFO  [io.lettuce.core.EpollProvider                     ] : Starting without optional epoll library
+2020-01-15 16:36:59 INFO  [io.lettuce.core.KqueueProvider                    ] : Starting without optional kqueue library
+2020-01-15 16:37:00 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2020-01-15 16:37:00 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2020-01-15 16:37:00 INFO  [ion.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2020-01-15 16:37:01 INFO  [ng.annotation.ScheduledAnnotationBeanPostProcessor] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-15 16:37:01 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting ProtocolHandler ["http-nio-9001"]
+2020-01-15 16:37:01 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 9001 (http) with context path ''
+2020-01-15 16:37:01 INFO  [org.springframework.boot.StartupInfoLogger        ] : Started CoreApplication in 10.022 seconds (JVM running for 11.542)
+2020-01-15 16:37:20 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-15 16:37:20 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Initializing Servlet 'dispatcherServlet'
+2020-01-15 16:37:20 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Completed initialization in 10 ms
+2020-01-15 16:37:20 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/user/list
+2020-01-15 16:37:20 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 36 ms | infoï¼ statement-0 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 16:37:20 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 16:37:20 WARN  [b.servlet.handler.AbstractHandlerExceptionResolver] : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-01-15 16:37:20 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/error
+2020-01-15 16:37:20 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 4 ms | infoï¼ statement-0 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-15 16:37:20 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-15 16:37:55 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 58 ms | infoï¼ statement-0 | sqlï¼ SELECT COUNT(1) FROM sys_user
+2020-01-15 16:37:55 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 21 ms | infoï¼ statement-0 | sqlï¼ SELECT  USER_ID AS userId,USERNAME AS username,`PASSWORD` AS `password`,DEPT_ID AS deptId,EMAIL AS email,MOBILE AS mobile,`STATUS` AS `status`,CREATE_TIME AS createTime,MODIFY_TIME AS modifyTime,LAST_LOGIN_TIME AS lastLoginTime,SSEX AS ssex,DESCRIPTION AS description,AVATAR AS avatar,child_role AS childRole  FROM sys_user LIMIT 2,2
+2020-01-15 16:41:21 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 8944 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-15 16:41:21 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-15 16:41:22 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-15 16:41:22 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-15 16:41:22 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-01-15 16:41:22 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:41:22 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$9b1aad19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:41:23 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:41:23 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:41:23 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7c847072' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:41:23 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:41:23 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-15 16:41:23 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-15 16:41:23 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-15 16:41:23 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-15 16:41:23 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-15 16:41:23 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-15 16:41:23 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2214 ms
+2020-01-15 16:41:24 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-15 16:41:24",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-15 16:41:24",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-15 16:41:24 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-15 16:41:25 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-15 16:41:25 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-15 16:41:25 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-15 16:41:25 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-15 16:41:25 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-15 16:41:25 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-15 16:41:25 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-15 16:41:25 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-15 16:41:25 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-15 16:41:25 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-15 16:41:25 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', POST], []
+2020-01-15 16:41:25 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@267ff4df, org.springframework.security.web.context.SecurityContextPersistenceFilter@45287377, org.springframework.security.web.header.HeaderWriterFilter@1894fa9f, org.springframework.security.web.authentication.logout.LogoutFilter@5a4464c5, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@7b351446, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8eb6f9a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@37d699a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70b33256, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7caf1e5, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@54489296, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c4b5ceb, org.springframework.security.web.session.SessionManagementFilter@26a4f9ed, org.springframework.security.web.access.ExceptionTranslationFilter@37b01ce2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@935d3f9]
+2020-01-15 16:41:25 INFO  [ng.web.PropertySourcedRequestMappingHandlerMapping] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-15 16:41:26 INFO  [scheduling.concurrent.ExecutorConfigurationSupport] : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-15 16:41:26 INFO  [io.lettuce.core.EpollProvider                     ] : Starting without optional epoll library
+2020-01-15 16:41:26 INFO  [io.lettuce.core.KqueueProvider                    ] : Starting without optional kqueue library
+2020-01-15 16:41:26 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2020-01-15 16:41:26 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2020-01-15 16:41:27 INFO  [ion.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2020-01-15 16:41:28 INFO  [ng.annotation.ScheduledAnnotationBeanPostProcessor] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-15 16:41:28 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting ProtocolHandler ["http-nio-9001"]
+2020-01-15 16:41:28 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 9001 (http) with context path ''
+2020-01-15 16:41:28 INFO  [org.springframework.boot.StartupInfoLogger        ] : Started CoreApplication in 7.365 seconds (JVM running for 8.528)
+2020-01-15 16:41:36 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-15 16:41:36 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Initializing Servlet 'dispatcherServlet'
+2020-01-15 16:41:36 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Completed initialization in 9 ms
+2020-01-15 16:41:36 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 19 ms | infoï¼ statement-0 | sqlï¼ SELECT COUNT(1) FROM sys_user
+2020-01-15 16:41:36 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 2 ms | infoï¼ statement-0 | sqlï¼ select * from sys_user LIMIT 2,2

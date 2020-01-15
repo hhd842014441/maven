@@ -1,0 +1,648 @@
+2020-01-10 13:45:38 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 6944 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-10 13:45:39 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-10 13:45:40 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-10 13:45:40 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-10 13:45:40 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2020-01-10 13:45:40 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 13:45:41 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$1979a646] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 13:45:41 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 13:45:41 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 13:45:41 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3722c145' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 13:45:41 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 13:45:41 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 13:45:41 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-10 13:45:41 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-10 13:45:41 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-10 13:45:41 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-10 13:45:41 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-10 13:45:41 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2628 ms
+2020-01-10 13:45:42 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-10 13:45:42",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-10 13:45:42",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-10 13:45:42 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-10 13:45:44 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-10 13:45:44 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-10 13:45:44 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-10 13:45:44 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-10 13:45:44 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-10 13:45:44 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-10 13:45:44 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-10 13:45:44 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-10 13:45:44 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-10 13:45:45 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57b9389f, org.springframework.security.web.context.SecurityContextPersistenceFilter@3af236d0, org.springframework.security.web.header.HeaderWriterFilter@4bcdd11, org.springframework.security.web.authentication.logout.LogoutFilter@23b1aa9, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@100aa331, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@611c3eae, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4bf4680c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54895681, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12567179, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@1ab53860, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72b2c5ed, org.springframework.security.web.session.SessionManagementFilter@5514579e, org.springframework.security.web.access.ExceptionTranslationFilter@76a6f045, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@150d6eaf]
+2020-01-10 13:45:45 INFO  [ng.web.PropertySourcedRequestMappingHandlerMapping] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-10 13:45:45 INFO  [scheduling.concurrent.ExecutorConfigurationSupport] : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-10 13:45:46 INFO  [io.lettuce.core.EpollProvider                     ] : Starting without optional epoll library
+2020-01-10 13:45:46 INFO  [io.lettuce.core.KqueueProvider                    ] : Starting without optional kqueue library
+2020-01-10 13:45:47 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2020-01-10 13:45:47 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2020-01-10 13:45:47 INFO  [ion.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2020-01-10 13:45:48 INFO  [ng.annotation.ScheduledAnnotationBeanPostProcessor] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-10 13:45:48 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting ProtocolHandler ["http-nio-9001"]
+2020-01-10 13:45:48 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 9001 (http) with context path ''
+2020-01-10 13:45:48 INFO  [org.springframework.boot.StartupInfoLogger        ] : Started CoreApplication in 11.066 seconds (JVM running for 13.42)
+2020-01-10 13:55:47 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-10 13:55:47 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Initializing Servlet 'dispatcherServlet'
+2020-01-10 13:55:47 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Completed initialization in 26 ms
+2020-01-10 14:21:14 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 12060 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-10 14:21:14 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-10 14:21:15 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-10 14:21:15 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-10 14:21:15 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-01-10 14:21:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:21:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$2f9e7334] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:21:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:21:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:21:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1937eaff' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:21:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:21:16 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:21:16 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-10 14:21:16 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-10 14:21:16 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-10 14:21:16 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-10 14:21:16 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-10 14:21:16 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2534 ms
+2020-01-10 14:21:17 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-10 14:21:17",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-10 14:21:17",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-10 14:21:17 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-10 14:21:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-10 14:21:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-10 14:21:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-10 14:21:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-10 14:21:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-10 14:21:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-10 14:21:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-10 14:21:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-10 14:21:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-10 14:21:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-10 14:21:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bf4680c, org.springframework.security.web.context.SecurityContextPersistenceFilter@59e7564b, org.springframework.security.web.header.HeaderWriterFilter@53d30d23, org.springframework.security.web.authentication.logout.LogoutFilter@200d1a3d, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@1213ffbc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@150d6eaf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3751acd7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@307af381, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2dd0a0d0, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6615237, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d6039df, org.springframework.security.web.session.SessionManagementFilter@6793f752, org.springframework.security.web.access.ExceptionTranslationFilter@3cc3f13e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e38c472]
+2020-01-10 14:21:19 INFO  [ng.web.PropertySourcedRequestMappingHandlerMapping] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-10 14:21:19 INFO  [scheduling.concurrent.ExecutorConfigurationSupport] : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-10 14:21:19 INFO  [io.lettuce.core.EpollProvider                     ] : Starting without optional epoll library
+2020-01-10 14:21:19 INFO  [io.lettuce.core.KqueueProvider                    ] : Starting without optional kqueue library
+2020-01-10 14:21:20 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2020-01-10 14:21:20 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2020-01-10 14:21:20 INFO  [ion.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2020-01-10 14:21:21 INFO  [ng.annotation.ScheduledAnnotationBeanPostProcessor] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-10 14:21:21 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting ProtocolHandler ["http-nio-9001"]
+2020-01-10 14:21:21 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 9001 (http) with context path ''
+2020-01-10 14:21:21 INFO  [org.springframework.boot.StartupInfoLogger        ] : Started CoreApplication in 8.145 seconds (JVM running for 9.632)
+2020-01-10 14:21:26 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-10 14:21:26 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Initializing Servlet 'dispatcherServlet'
+2020-01-10 14:21:26 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Completed initialization in 10 ms
+2020-01-10 14:26:03 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 18768 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-10 14:26:03 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-10 14:26:04 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-10 14:26:04 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-10 14:26:04 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2020-01-10 14:26:04 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:26:04 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$9f07045b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:26:04 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:26:04 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:26:04 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@51ec2856' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:26:04 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:26:04 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:26:05 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-10 14:26:05 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-10 14:26:05 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-10 14:26:05 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-10 14:26:05 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-10 14:26:05 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2343 ms
+2020-01-10 14:26:06 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-10 14:26:06",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-10 14:26:06",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-10 14:26:06 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-10 14:26:07 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-10 14:26:07 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-10 14:26:07 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-10 14:26:07 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-10 14:26:07 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-10 14:26:07 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-10 14:26:07 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-10 14:26:07 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-10 14:26:07 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-10 14:26:07 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-10 14:26:07 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6615237, org.springframework.security.web.context.SecurityContextPersistenceFilter@6793f752, org.springframework.security.web.header.HeaderWriterFilter@3cc3f13e, org.springframework.security.web.authentication.logout.LogoutFilter@7f12094d, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@40943a6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3751acd7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@554566a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59e7564b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23564dd2, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@55421b8d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@eaf8427, org.springframework.security.web.session.SessionManagementFilter@53d30d23, org.springframework.security.web.access.ExceptionTranslationFilter@424f02b8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b8a144e]
+2020-01-10 14:26:07 INFO  [ng.web.PropertySourcedRequestMappingHandlerMapping] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-10 14:26:07 INFO  [scheduling.concurrent.ExecutorConfigurationSupport] : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-10 14:26:08 INFO  [io.lettuce.core.EpollProvider                     ] : Starting without optional epoll library
+2020-01-10 14:26:08 INFO  [io.lettuce.core.KqueueProvider                    ] : Starting without optional kqueue library
+2020-01-10 14:26:08 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2020-01-10 14:26:08 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2020-01-10 14:26:08 INFO  [ion.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2020-01-10 14:26:09 INFO  [ng.annotation.ScheduledAnnotationBeanPostProcessor] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-10 14:26:09 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting ProtocolHandler ["http-nio-9001"]
+2020-01-10 14:26:09 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 9001 (http) with context path ''
+2020-01-10 14:26:09 INFO  [org.springframework.boot.StartupInfoLogger        ] : Started CoreApplication in 7.622 seconds (JVM running for 8.713)
+2020-01-10 14:26:14 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-10 14:26:14 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Initializing Servlet 'dispatcherServlet'
+2020-01-10 14:26:14 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Completed initialization in 7 ms
+2020-01-10 14:26:14 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/
+2020-01-10 14:26:14 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 133 ms | infoï¼ statement-0 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-10 14:26:14 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-10 14:26:14 INFO  [com.hanhuide.core.controller.LoginController      ] : 当前登陆用户：anonymousUser
+2020-01-10 14:26:14 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/error
+2020-01-10 14:26:14 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 3 ms | infoï¼ statement-0 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-10 14:26:14 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-10 14:26:21 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/login
+2020-01-10 14:26:21 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 1 ms | infoï¼ statement-0 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-10 14:26:21 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-10 14:27:00 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/login
+2020-01-10 14:27:00 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 2 ms | infoï¼ statement-0 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-10 14:27:00 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-10 14:27:04 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/login
+2020-01-10 14:27:04 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 1 ms | infoï¼ statement-0 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-10 14:27:04 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-10 14:28:22 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：37173用户输入：37173
+2020-01-10 14:28:22 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 14:28:22 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 82 ms | infoï¼ statement-0 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 14:28:22 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 14:28:22 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 14:28:22 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 14:28:22 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 14:28:22 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$KZcfObOboKpRtx7GnkB0xOj.EEHGOFsRmUhaIqX1fm9tuR0kySKzC
+2020-01-10 14:28:22 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='37173', username='root', password='123456', captcha='0cfa39dd-71fd-4230-9dd6-2ec2b6ba5d19'}
+2020-01-10 14:28:23 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 14:30:13 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 400 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-10 14:30:13 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-10 14:30:14 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-10 14:30:14 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-10 14:30:14 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2020-01-10 14:30:15 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:30:15 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$ca586089] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:30:15 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:30:15 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:30:15 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6fa0450e' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:30:15 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:30:15 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:30:15 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-10 14:30:15 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-10 14:30:15 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-10 14:30:15 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-10 14:30:15 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-10 14:30:15 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2089 ms
+2020-01-10 14:30:16 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-10 14:30:16",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-10 14:30:16",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-10 14:30:16 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-10 14:30:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-10 14:30:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-10 14:30:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-10 14:30:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-10 14:30:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-10 14:30:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-10 14:30:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-10 14:30:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-10 14:30:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-10 14:30:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-10 14:30:19 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b832551, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ffd4b12, org.springframework.security.web.header.HeaderWriterFilter@274fdea6, org.springframework.security.web.authentication.logout.LogoutFilter@54895681, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@35787726, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ee92e7d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5fb8dc01, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ad7bd26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76a6f045, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@66020d69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@150d6eaf, org.springframework.security.web.session.SessionManagementFilter@2a484710, org.springframework.security.web.access.ExceptionTranslationFilter@3f6c2763, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@307c59ea]
+2020-01-10 14:30:19 INFO  [ng.web.PropertySourcedRequestMappingHandlerMapping] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-10 14:30:19 INFO  [scheduling.concurrent.ExecutorConfigurationSupport] : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-10 14:30:19 INFO  [io.lettuce.core.EpollProvider                     ] : Starting without optional epoll library
+2020-01-10 14:30:19 INFO  [io.lettuce.core.KqueueProvider                    ] : Starting without optional kqueue library
+2020-01-10 14:30:20 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2020-01-10 14:30:20 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2020-01-10 14:30:20 INFO  [ion.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2020-01-10 14:30:21 INFO  [ng.annotation.ScheduledAnnotationBeanPostProcessor] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-10 14:30:21 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting ProtocolHandler ["http-nio-9001"]
+2020-01-10 14:30:21 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 9001 (http) with context path ''
+2020-01-10 14:30:21 INFO  [org.springframework.boot.StartupInfoLogger        ] : Started CoreApplication in 8.543 seconds (JVM running for 9.726)
+2020-01-10 14:33:16 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-10 14:33:16 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Initializing Servlet 'dispatcherServlet'
+2020-01-10 14:33:16 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Completed initialization in 14 ms
+2020-01-10 14:39:05 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 22064 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-10 14:39:05 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-10 14:39:06 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-10 14:39:06 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-10 14:39:06 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2020-01-10 14:39:07 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:39:07 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$6e2bbbb6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:39:07 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:39:07 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:39:07 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1947596f' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:39:07 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:39:07 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:39:07 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-10 14:39:07 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-10 14:39:07 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-10 14:39:07 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-10 14:39:08 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-10 14:39:08 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2440 ms
+2020-01-10 14:39:08 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-10 14:39:08",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-10 14:39:08",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-10 14:39:08 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-10 14:39:14 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-10 14:39:14 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-10 14:39:14 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-10 14:39:14 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-10 14:39:14 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-10 14:39:14 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-10 14:39:14 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-10 14:39:14 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-10 14:39:14 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-10 14:39:14 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-10 14:39:14 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@712cd5d3, org.springframework.security.web.context.SecurityContextPersistenceFilter@a316f6b, org.springframework.security.web.header.HeaderWriterFilter@7159d601, org.springframework.security.web.authentication.logout.LogoutFilter@61b838f2, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@3fdcde7a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@23b1aa9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@402b4f81, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@410fc508, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2eb1c615, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@e26a3df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2094bf3d, org.springframework.security.web.session.SessionManagementFilter@33d230ce, org.springframework.security.web.access.ExceptionTranslationFilter@7a572ea0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@200d1a3d]
+2020-01-10 14:39:14 INFO  [ng.web.PropertySourcedRequestMappingHandlerMapping] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-10 14:39:14 INFO  [scheduling.concurrent.ExecutorConfigurationSupport] : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-10 14:39:15 INFO  [io.lettuce.core.EpollProvider                     ] : Starting without optional epoll library
+2020-01-10 14:39:15 INFO  [io.lettuce.core.KqueueProvider                    ] : Starting without optional kqueue library
+2020-01-10 14:39:16 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2020-01-10 14:39:16 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2020-01-10 14:39:16 INFO  [ion.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2020-01-10 14:39:17 INFO  [ng.annotation.ScheduledAnnotationBeanPostProcessor] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-10 14:39:17 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting ProtocolHandler ["http-nio-9001"]
+2020-01-10 14:39:17 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 9001 (http) with context path ''
+2020-01-10 14:39:17 INFO  [org.springframework.boot.StartupInfoLogger        ] : Started CoreApplication in 12.559 seconds (JVM running for 14.06)
+2020-01-10 14:40:29 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-10 14:40:29 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Initializing Servlet 'dispatcherServlet'
+2020-01-10 14:40:29 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Completed initialization in 13 ms
+2020-01-10 14:44:08 INFO  [org.springframework.boot.StartupInfoLogger        ] : Starting CoreApplication on PC-201812242242 with PID 7692 (F:\Projects\maven\core\target\classes started by 韩惠德 in F:\Projects\maven)
+2020-01-10 14:44:08 INFO  [org.springframework.boot.SpringApplication        ] : The following profiles are active: driver,toolkit
+2020-01-10 14:44:09 INFO  [.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-10 14:44:09 INFO  [.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-10 14:44:10 INFO  [.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2020-01-10 14:44:10 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:44:10 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'redisConfig' of type [com.hanhuide.toolkit.config.RedisConfig$$EnhancerBySpringCGLIB$$1423f14b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:44:10 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:44:10 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:44:10 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5f254608' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:44:10 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:44:10 INFO  [essorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 14:44:10 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port(s): 9001 (http)
+2020-01-10 14:44:10 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing ProtocolHandler ["http-nio-9001"]
+2020-01-10 14:44:10 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting service [Tomcat]
+2020-01-10 14:44:10 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-10 14:44:11 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring embedded WebApplicationContext
+2020-01-10 14:44:11 INFO  [servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2080 ms
+2020-01-10 14:44:11 INFO  [com.hanhuide.driver.config.DynamicDataSourceConfig] : DataSources:{MASTER={
+	CreateTime:"2020-01-10 14:44:11",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}, CLUSTER={
+	CreateTime:"2020-01-10 14:44:11",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}}
+2020-01-10 14:44:11 INFO  [com.alibaba.druid.pool.DruidDataSource            ] : {dataSource-1} inited
+2020-01-10 14:44:13 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/css/**'], []
+2020-01-10 14:44:13 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/js/**'], []
+2020-01-10 14:44:13 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-01-10 14:44:13 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/images/**'], []
+2020-01-10 14:44:13 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/vendor/**'], []
+2020-01-10 14:44:13 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/kaptcha/render'], []
+2020-01-10 14:44:13 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-01-10 14:44:13 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/qq'], []
+2020-01-10 14:44:13 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='zhifubao'], []
+2020-01-10 14:44:13 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-01-10 14:44:13 INFO  [gframework.security.web.DefaultSecurityFilterChain] : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15a8cebd, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e140ae, org.springframework.security.web.header.HeaderWriterFilter@6c8efde4, org.springframework.security.web.authentication.logout.LogoutFilter@4662752a, com.hanhuide.core.filter.JwtAuthenticationTokenFilter@27b337bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a04ab05, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@370c7cc5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b4814d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f213a2, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@4bce62b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f6c2763, org.springframework.security.web.session.SessionManagementFilter@3b170235, org.springframework.security.web.access.ExceptionTranslationFilter@8f2e3e6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@681de87f]
+2020-01-10 14:44:13 INFO  [ng.web.PropertySourcedRequestMappingHandlerMapping] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-10 14:44:13 INFO  [scheduling.concurrent.ExecutorConfigurationSupport] : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-10 14:44:13 INFO  [io.lettuce.core.EpollProvider                     ] : Starting without optional epoll library
+2020-01-10 14:44:13 INFO  [io.lettuce.core.KqueueProvider                    ] : Starting without optional kqueue library
+2020-01-10 14:44:14 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Context refreshed
+2020-01-10 14:44:14 INFO  [pring.web.plugins.DocumentationPluginsBootstrapper] : Found 1 custom documentation plugin(s)
+2020-01-10 14:44:14 INFO  [ion.spring.web.scanners.ApiListingReferenceScanner] : Scanning for api listing references
+2020-01-10 14:44:15 INFO  [ng.annotation.ScheduledAnnotationBeanPostProcessor] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-10 14:44:15 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Starting ProtocolHandler ["http-nio-9001"]
+2020-01-10 14:44:15 INFO  [framework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port(s): 9001 (http) with context path ''
+2020-01-10 14:44:15 INFO  [org.springframework.boot.StartupInfoLogger        ] : Started CoreApplication in 7.427 seconds (JVM running for 8.722)
+2020-01-10 14:44:43 INFO  [org.apache.juli.logging.DirectJDKLog              ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-10 14:44:43 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Initializing Servlet 'dispatcherServlet'
+2020-01-10 14:44:43 INFO  [org.springframework.web.servlet.FrameworkServlet  ] : Completed initialization in 10 ms
+2020-01-10 14:44:49 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='null', username='null', password='null', captcha='null'}
+2020-01-10 14:50:04 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='98952', username='root', password='123456', captcha='5eae3277-3ccb-4e92-b26b-92e057e41fac'}
+2020-01-10 14:50:04 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：98952用户输入：98952
+2020-01-10 14:50:04 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 14:50:04 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 25 ms | infoï¼ statement-0 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 14:50:04 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 14:50:04 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 14:50:04 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 14:50:04 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 14:50:04 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$fbQTJ8tjzWpntr.NZ4CnyOm3BJUesL97zzNMXRiw/wGoFzlqZpDlS
+2020-01-10 14:50:04 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='98952', username='root', password='123456', captcha='5eae3277-3ccb-4e92-b26b-92e057e41fac'}
+2020-01-10 14:50:04 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 14:55:33 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='null', username='null', password='null', captcha='null'}
+2020-01-10 14:56:07 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='null', username='null', password='null', captcha='null'}
+2020-01-10 15:00:01 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='null', username='null', password='null', captcha='null'}
+2020-01-10 16:29:55 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/
+2020-01-10 16:29:58 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 44 ms | infoï¼ statement-1 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-10 16:29:58 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-10 16:29:58 INFO  [com.hanhuide.core.controller.LoginController      ] : 当前登陆用户：anonymousUser
+2020-01-10 16:30:00 INFO  [ndler.CustomFilterInvocationSecurityMetadataSource] : 请求的url:/login
+2020-01-10 16:30:00 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 3 ms | infoï¼ statement-1 | sqlï¼ select sys_role.ROLE_ID,sys_role.ROLE_NAME,sys_menu.PATH,sys_menu.MENU_NAME
+        from sys_role LEFT JOIN sys_role_menu on sys_role_menu.ROLE_ID =
+        sys_role.ROLE_ID LEFT JOIN sys_menu on sys_menu.MENU_ID =
+        sys_role_menu.MENU_ID
+2020-01-10 16:30:00 INFO  [.hanhuide.core.handler.CustomAccessDecisionManager] : principal:anonymousUser collection:[ROLE_ANONYMOUS]
+2020-01-10 16:39:57 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='null', username='null', password='null', captcha='null'}
+2020-01-10 16:40:46 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='null', username='null', password='null', captcha='null'}
+2020-01-10 16:41:35 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='null', username='null', password='null', captcha='null'}
+2020-01-10 16:44:18 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='', username='root', password='123456', captcha='a755a853-e81c-4ba2-a7e3-68fab9e05574'}
+2020-01-10 16:44:32 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='43648', username='root', password='123456', captcha='a755a853-e81c-4ba2-a7e3-68fab9e05574'}
+2020-01-10 16:44:32 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：43648用户输入：43648
+2020-01-10 16:44:32 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 16:44:32 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 30 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 16:44:32 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 16:44:32 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 16:44:32 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 16:44:32 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 16:44:32 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$/d3m.N7MEQGUZALr/8JNO.LmKgmFqTZObv/zfjsIck9Q/lalJvO1G
+2020-01-10 16:44:32 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='43648', username='root', password='123456', captcha='a755a853-e81c-4ba2-a7e3-68fab9e05574'}
+2020-01-10 16:44:32 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 16:46:30 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='null', username='null', password='null', captcha='null'}
+2020-01-10 16:51:15 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='null', username='null', password='null', captcha='null'}
+2020-01-10 16:52:35 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='null', username='null', password='null', captcha='null'}
+2020-01-10 16:53:04 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='null', username='null', password='null', captcha='null'}
+2020-01-10 16:53:44 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='', username='root', password='123456', captcha='8ff4fdc3-62d1-4b8f-a2f7-cb8afeb30bfa'}
+2020-01-10 16:56:23 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='', username='root', password='123456', captcha='ca359eb3-e3ad-45ff-af39-4d5c440157d2'}
+2020-01-10 16:56:56 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='null', username='null', password='null', captcha='null'}
+2020-01-10 16:57:26 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='', username='root', password='123456', captcha='0d817cca-f262-4477-b794-ff866de0f307'}
+2020-01-10 16:58:11 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='', username='root', password='123456', captcha='005adfe8-162a-47dd-b7fa-e1b5d23d569f'}
+2020-01-10 16:58:31 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='69628', username='root', password='123456', captcha='005adfe8-162a-47dd-b7fa-e1b5d23d569f'}
+2020-01-10 16:58:31 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：69628用户输入：69628
+2020-01-10 16:58:31 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 16:58:31 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 8 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 16:58:31 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 16:58:31 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 16:58:31 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 16:58:31 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 16:58:31 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$bC1aAwL9arDuofWbNyFW7.zcuHr5kUu4b32OCGl/LoLE4yCy9GtU6
+2020-01-10 16:58:31 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='69628', username='root', password='123456', captcha='005adfe8-162a-47dd-b7fa-e1b5d23d569f'}
+2020-01-10 16:58:31 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 16:59:31 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='37715', username='root', password='123456', captcha='bd619522-b058-48c9-8048-88625d69f4ec'}
+2020-01-10 16:59:31 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：37715用户输入：37715
+2020-01-10 16:59:31 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 16:59:31 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 4 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 16:59:31 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 16:59:31 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 16:59:31 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 16:59:31 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 16:59:31 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$oZ84s2H/.eUxW7jLGQsa9eE9jym19T2R9Zyx7UW15mjoR4lezdmlS
+2020-01-10 16:59:31 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='37715', username='root', password='123456', captcha='bd619522-b058-48c9-8048-88625d69f4ec'}
+2020-01-10 16:59:31 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 17:00:54 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='45172', username='root', password='123456', captcha='38d1cf8b-af39-4a10-9599-06eb956abce3'}
+2020-01-10 17:00:54 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：45177用户输入：45172
+2020-01-10 17:01:48 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='73629', username='root', password='123456', captcha='e622b3d1-e0d8-46a5-a4f1-61d9406c6007'}
+2020-01-10 17:01:48 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：73629用户输入：73629
+2020-01-10 17:01:48 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 17:01:48 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 5 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 17:01:48 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 17:01:48 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 17:01:48 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 17:01:48 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 17:01:48 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$lgWEsaIaiPs/6j9GUNKSquuoSnwFCzd9olNaEktBnej0cGckSLSy2
+2020-01-10 17:01:49 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='73629', username='root', password='123456', captcha='e622b3d1-e0d8-46a5-a4f1-61d9406c6007'}
+2020-01-10 17:01:49 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 17:02:33 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='02165', username='root', password='123456', captcha='db599e9e-6818-4334-bbc5-45f8c96c9110'}
+2020-01-10 17:02:33 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：02165用户输入：02165
+2020-01-10 17:02:33 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 17:02:33 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 8 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 17:02:33 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 17:02:33 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 17:02:33 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 17:02:33 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 17:02:33 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$JNRnVdR24AiMStJPOnTwjeZ7vBdDJ8J9YD5kcwG2H4toWazEmQj7u
+2020-01-10 17:02:33 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='02165', username='root', password='123456', captcha='db599e9e-6818-4334-bbc5-45f8c96c9110'}
+2020-01-10 17:02:33 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 17:03:15 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='02439', username='root', password='123456', captcha='3c9d7331-0430-4e1d-ab91-a874534c85d4'}
+2020-01-10 17:03:15 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：02439用户输入：02439
+2020-01-10 17:03:15 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 17:03:15 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 1 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 17:03:15 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 17:03:15 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 17:03:15 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 17:03:15 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 17:03:15 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$WkmyJI0kTteOEdBrMocz7uzDzT2OBF0h7F3jE5Vb7pvOWmh/X5zi2
+2020-01-10 17:03:15 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='02439', username='root', password='123456', captcha='3c9d7331-0430-4e1d-ab91-a874534c85d4'}
+2020-01-10 17:03:15 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 17:04:02 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='59226', username='root', password='123456', captcha='d3ef0926-dc41-4b62-8600-be92967eada3'}
+2020-01-10 17:04:02 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：59226用户输入：59226
+2020-01-10 17:04:02 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 17:04:02 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 1 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 17:04:02 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 17:04:02 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 17:04:02 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 17:04:02 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 17:04:02 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$BbxeHj.zpbtuNtsEQW62sO2BwyVa/metIxGyYm/N/2MazI6qg8c2m
+2020-01-10 17:04:02 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='59226', username='root', password='123456', captcha='d3ef0926-dc41-4b62-8600-be92967eada3'}
+2020-01-10 17:04:02 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 17:04:39 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='71502', username='root', password='123456', captcha='4ae4a804-896e-4ef6-a757-b1c189fdd324'}
+2020-01-10 17:04:39 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：71502用户输入：71502
+2020-01-10 17:04:39 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 17:04:39 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 1 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 17:04:39 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 17:04:39 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 17:04:39 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 17:04:39 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 17:04:39 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$2Ob6SaYwVYqVw4/kJ2KmWOkQgWNowehd2/HhhKPoAbSqxx/C40fEq
+2020-01-10 17:04:39 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='71502', username='root', password='123456', captcha='4ae4a804-896e-4ef6-a757-b1c189fdd324'}
+2020-01-10 17:04:39 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 17:17:13 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='86963', username='root', password='123456', captcha='0969fa36-60b4-4df5-b3a9-c8871a5a397b'}
+2020-01-10 17:17:13 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：86963用户输入：86963
+2020-01-10 17:17:13 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 17:17:13 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 30 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 17:17:13 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 17:17:13 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 17:17:13 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 17:17:13 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 17:17:13 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$WU/WQOA94obj2ZTbmNhxnu0ph.gqUeNCKLrZY6LZKsG7eEsYvM3s2
+2020-01-10 17:17:14 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='86963', username='root', password='123456', captcha='0969fa36-60b4-4df5-b3a9-c8871a5a397b'}
+2020-01-10 17:17:14 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 17:17:55 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='', username='root', password='123456', captcha='06689324-432b-4d53-b7e7-4d214173c5b2'}
+2020-01-10 17:23:34 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='84861', username='root', password='123456', captcha='dcf317e0-650e-4b28-8e69-878b187844e0'}
+2020-01-10 17:23:34 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：84861用户输入：84861
+2020-01-10 17:23:34 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 17:23:34 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 3 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 17:23:34 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 17:23:34 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 17:23:34 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 17:23:34 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 17:23:34 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$shyg07Jobt17HIc6D0ALg.1Kh5tgOoV4NCjVns.kDqsYp9BN7YLgC
+2020-01-10 17:23:34 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='84861', username='root', password='123456', captcha='dcf317e0-650e-4b28-8e69-878b187844e0'}
+2020-01-10 17:23:34 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 17:25:35 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='84861', username='root', password='123456', captcha='dcf317e0-650e-4b28-8e69-878b187844e0'}
+2020-01-10 17:25:51 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='63148', username='root', password='123456', captcha='f9df56d1-d4a4-4752-bfdf-f36d4d2de695'}
+2020-01-10 17:25:51 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：63148用户输入：63148
+2020-01-10 17:25:51 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 17:25:51 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 1 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 17:25:51 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 17:25:51 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 17:25:51 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 17:25:51 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 17:25:51 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$WGryTNBvJDuDfWC7kCC1/OM6sKWf.Tq5OpwqdeM9DOE.D7F8/Tj8e
+2020-01-10 17:25:51 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='63148', username='root', password='123456', captcha='f9df56d1-d4a4-4752-bfdf-f36d4d2de695'}
+2020-01-10 17:25:51 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 17:26:30 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='08410', username='root', password='123456', captcha='58c9f613-4b7d-413b-91b0-2d2441d218f2'}
+2020-01-10 17:26:30 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：08410用户输入：08410
+2020-01-10 17:26:30 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 17:26:30 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 1 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 17:26:30 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 17:26:30 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 17:26:30 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 17:26:30 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 17:26:30 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$PNi2PJwUIGUnDw8RycXHk.6ZJvGkPxfNsd7XITbWuAMPfmVBtd8qm
+2020-01-10 17:26:30 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='08410', username='root', password='123456', captcha='58c9f613-4b7d-413b-91b0-2d2441d218f2'}
+2020-01-10 17:26:30 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中
+2020-01-10 17:28:58 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 用户请求：CustomAuthDetails{verifyCode='26693', username='root', password='123456', captcha='0701d763-f124-4ea8-9c31-9d579bad6233'}
+2020-01-10 17:28:58 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 验证码：26693用户输入：26693
+2020-01-10 17:28:58 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : >>>>>>>>> username:root
+2020-01-10 17:28:58 INFO  [com.p6spy.engine.spy.appender.Slf4JLogger         ] : SQL Timeï¼ 1 ms | infoï¼ statement-1 | sqlï¼ select `sys_user`.USER_ID,`sys_user`.USERNAME,`sys_user`.`PASSWORD` ,sys_role.ROLE_NAME from sys_user
+        LEFT JOIN sys_user_role on sys_user_role.USER_ID = `sys_user`.USER_ID
+        LEFT JOIN sys_role on sys_role.ROLE_ID = sys_user_role.ROLE_ID where sys_user.USERNAME = 'root'
+2020-01-10 17:28:58 INFO  [com.hanhuide.core.service.impl.UserServiceImpl    ] : 用户信息:SysUser(userId=1, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=[SysRole(roleId=null, roleName=管理员, remark=null, createTime=null, modifyTime=null, childMenus=null)])
+2020-01-10 17:28:58 INFO  [anhuide.core.service.impl.CustomUserDetailsService] : authorities:[管理员]
+2020-01-10 17:28:58 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : userDetailsSysUser(userId=null, username=root, password=$2a$10$UVCRif9kQ1T.upvEpdNTFuEQ7Q6qo2bCZEHzh4e6a9TTXpIEcKMAu, deptId=null, email=null, mobile=null, status=null, createTime=null, modifyTime=null, lastLoginTime=null, ssex=null, description=null, avatar=null, childRole=null)
+2020-01-10 17:28:58 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : 123456
+2020-01-10 17:28:58 INFO  [hanhuide.core.handler.CustomAuthenticationProvider] : $2a$10$sfcGJZeKn2fuUnktoWbDB.rGkdRvYfqJV/OQYNO.hsFpFvbpYEqQa
+2020-01-10 17:28:58 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 用户登录信息CustomAuthDetails{verifyCode='26693', username='root', password='123456', captcha='0701d763-f124-4ea8-9c31-9d579bad6233'}
+2020-01-10 17:28:58 INFO  [de.core.handler.CustomAuthenticationSuccessHandler] : 保存到redis 中

@@ -56,6 +56,7 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
         responseBody.setJwtToken(jwtToken);
         responseBody.setStatus(ResultEnum.USER_LOGIN_SUCCESS.getCode());
         responseBody.setMsg(ResultEnum.USER_LOGIN_SUCCESS.getMessage());
+        responseBody.setUser(userDetails.getUsername());
         String currentIp = AccessAddressUtil.getIpAddress(httpServletRequest);
         redisUtil.setTokenRefresh(jwtToken, userDetails.getUsername(), currentIp);
         log.info("保存到redis 中");

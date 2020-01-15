@@ -13,6 +13,7 @@ public class CustomResponseBody implements Serializable {
     private Object result;
     private String jwtToken;
     private Boolean bool;
+    private String user;
 
     public CustomResponseBody() {
     }

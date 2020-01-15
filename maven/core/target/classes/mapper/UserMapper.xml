@@ -46,4 +46,7 @@
     <select id="selectUserNameIsExist" parameterType="String" resultType="Integer">
         select count(*) from sys_user where sys_user.USERNAME = #{username}
     </select>
+    <select id="selectPage" resultMap="BaseResultMap">
+        select * from sys_user
+    </select>
 </mapper>
