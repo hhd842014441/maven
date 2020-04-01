@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC " -//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hanhuide.core.mapper.MenuMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hanhuide.security.model.SysMenu">
+        <id column="MENU_ID" jdbcType="DECIMAL" property="menuId"/>
+        <result column="PARENT_ID" jdbcType="DECIMAL" property="parentId"/>
+        <result column="MENU_NAME" jdbcType="VARCHAR" property="menuName"/>
+        <result column="PATH" jdbcType="VARCHAR" property="path"/>
+        <result column="COMPONENT" jdbcType="VARCHAR" property="component"/>
+        <result column="PERMS" jdbcType="VARCHAR" property="perms"/>
+        <result column="ICON" jdbcType="VARCHAR" property="icon"/>
+        <result column="TYPE" jdbcType="CHAR" property="type"/>
+        <result column="ORDER_NUM" jdbcType="DOUBLE" property="orderNum"/>
+        <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="MODIFY_TIME" jdbcType="TIMESTAMP" property="modifyTime"/>
+    </resultMap>
+
+    <insert id="add">
+    INSERT INTO `sys_menu` (`MENU_ID`, `PARENT_ID`, `MENU_NAME`, `PATH`, `COMPONENT`, `PERMS`, `ICON`, `TYPE`, `ORDER_NUM`, `CREATE_TIME`, `MODIFY_TIME`)
+                    VALUES (#{menuId}, #{parentId},#{menuName}, #{path},#{component}, #{perms},#{icon},#{type},#{orderNum},#{createTime},#{modifyTime});
+
+    </insert>
+    <update id="update" parameterType="Map">
+        update sys_menu
+        <set>
+            <if test="parentId != null">PARENT_ID=#{parentId},</if>
+            <if test="menuName != null">MENU_NAME=#{menuName},</if>
+            <if test="path != null">PATH=#{path},</if>
+            <if test="component != null">COMPONENT=#{component},</if>
+            <if test="perms != null">PERMS=#{perms},</if>
+            <if test="icon != null">ICON=#{icon},</if>
+            <if test="type != null">TYPE=#{type},</if>
+            <if test="orderNum != null">ORDER_NUM=#{orderNum},</if>
+            <if test="createTime != null">CREATE_TIME=#{createTime},</if>
+            <if test="modifyTime != null">MODIFY_TIME=#{modifyTime},</if>
+        </set>
+        where MENU_ID=#{menuId}
+    </update>
+
+    <delete id="del">
+        delete from sys_role_menu where ROLE_ID = #{roleId}
+    </delete>
+
+    <delete id="delByPerid">
+        delete from sys_menu where MENU_ID = #{menuId}
+    </delete>
+
+    <select id="getCount" resultType="Integer">
+        select count(*) from sys_role_menu where ROLE_ID = #{roleId}
+    </select>
+
+    <select id="getAllMenuTree" resultType="com.hanhuide.security.model.SysMenu">
+        select * from sys_menu order by ORDER_NUM asc
+    </select>
+
+    <insert id="addRP">
+        INSERT INTO `sys_role_menu` (`ROLE_ID`, `MENU_ID`) VALUES (#{roleId},#{menuId});
+    </insert>
+
+
+    <select id="getParentMenu" resultType="com.hanhuide.security.model.SysMenu">
+        select * from sys_menu where parent_id = #{parentId} order by ORDER_NUM asc
+    </select>
+
+    <select id="getPerIdList" resultType="String">
+        select MENU_ID from sys_role_menu where ROLE_ID = #{roleId}
+    </select>
+
+</mapper>

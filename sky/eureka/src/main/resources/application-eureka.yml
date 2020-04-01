@@ -1,0 +1,13 @@
+eureka:
+  instance: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
+  server:
+    my-url: eureka
+spring:
+  profiles: eureka
+  application:
+    name: eureka-server
